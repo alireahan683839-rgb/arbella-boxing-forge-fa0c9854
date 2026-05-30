@@ -44,8 +44,8 @@ function Page() {
 
   const prices: Record<Offering, string> = {
     trial: "€15 per class",
-    private: "€60 per hour · €30 per 30 min",
-    holiday: "€180 per day — includes room, accommodation and 3 meals a day. Extra 1:1: €60/hr · €30/30 min",
+    private: "€60 per hour · €30 per 30 min · Term: €700/month",
+    holiday: "€180 per day — includes room, accommodation and 3 meals a day. Extra 1:1: €60/hr · €30/30 min. Term: €700/month",
   };
 
   const onSubmit = (e: React.FormEvent) => {
@@ -106,6 +106,7 @@ function Page() {
             <p><strong className="text-foreground">Pricing reference</strong></p>
             <p>Holiday retreat: <span className="text-foreground">€180/day</span> — room, accommodation & 3 meals/day.</p>
             <p>Extra 1:1 coaching: <span className="text-foreground">€60/hour</span> · <span className="text-foreground">€30/30 min</span>.</p>
+            <p>Term pricing: <span className="text-foreground">€700/month</span>.</p>
           </div>
           <div className="mt-5 flex flex-wrap gap-2">
             <button
@@ -135,6 +136,7 @@ function Page() {
         <li><strong className="text-foreground">Trial / group class:</strong> €15</li>
         <li><strong className="text-foreground">Private 1:1:</strong> €60 per hour · €30 per 30 min</li>
         <li><strong className="text-foreground">Holiday retreat:</strong> €180 per day — includes room, accommodation and 3 meals a day</li>
+        <li><strong className="text-foreground">Term:</strong> €700 per month</li>
       </ul>
       <form onSubmit={onSubmit} className="mt-8 space-y-6">
         <div>
