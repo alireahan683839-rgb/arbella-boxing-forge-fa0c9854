@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { ArrowRight, MapPin, MessageCircle, Check } from "lucide-react";
-import heroImg from "@/assets/hero-coach.jpg";
+import heroAction from "@/assets/coach-action.jpg";
+import heroProfile from "@/assets/coach-profile.jpg";
 import cardLocal from "@/assets/card-local.jpg";
 import cardHoliday from "@/assets/card-holiday.jpg";
 import cardFounder from "@/assets/card-founder.jpg";
@@ -37,12 +38,20 @@ function Index() {
     <div className="bg-background text-foreground">
       {/* HERO */}
       <section className="relative min-h-[100svh] flex items-end overflow-hidden">
-        <img
-          src={heroImg}
-          alt="Coach Mark Lodgey training at Mike's Gym Marbella"
-          className="absolute inset-0 w-full h-full object-cover"
-          loading="eager"
-        />
+        <div className="absolute inset-0 grid grid-cols-2">
+          <img
+            src={heroAction}
+            alt="Coach Mark Lodgey training at Mike's Gym Marbella"
+            className="w-full h-full object-cover object-top"
+            loading="eager"
+          />
+          <img
+            src={heroProfile}
+            alt="Coach Mark Lodgey"
+            className="w-full h-full object-cover object-top"
+            loading="eager"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/30" />
         <div className="absolute inset-0 gradient-hero" />
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-20 md:pb-28 w-full">
