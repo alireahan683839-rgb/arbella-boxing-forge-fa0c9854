@@ -9,8 +9,14 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as LocalBoxingAcademyRouteImport } from './routes/local-boxing-academy'
 import { Route as IndexRouteImport } from './routes/index'
 
+const LocalBoxingAcademyRoute = LocalBoxingAcademyRouteImport.update({
+  id: '/local-boxing-academy',
+  path: '/local-boxing-academy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +25,39 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/local-boxing-academy': typeof LocalBoxingAcademyRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/local-boxing-academy': typeof LocalBoxingAcademyRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/local-boxing-academy': typeof LocalBoxingAcademyRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/local-boxing-academy'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/local-boxing-academy'
+  id: '__root__' | '/' | '/local-boxing-academy'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  LocalBoxingAcademyRoute: typeof LocalBoxingAcademyRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/local-boxing-academy': {
+      id: '/local-boxing-academy'
+      path: '/local-boxing-academy'
+      fullPath: '/local-boxing-academy'
+      preLoaderRoute: typeof LocalBoxingAcademyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,7 +70,18 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  LocalBoxingAcademyRoute: LocalBoxingAcademyRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
