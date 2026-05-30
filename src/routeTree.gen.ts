@@ -9,12 +9,72 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as PrivateCoachingRouteImport } from './routes/private-coaching'
+import { Route as MikesGymLocationRouteImport } from './routes/mikes-gym-location'
 import { Route as LocalBoxingAcademyRouteImport } from './routes/local-boxing-academy'
+import { Route as FounderExecutiveRetreatRouteImport } from './routes/founder-executive-retreat'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as BoxingHolidayRetreatRouteImport } from './routes/boxing-holiday-retreat'
+import { Route as BookRouteImport } from './routes/book'
+import { Route as ApplyRouteImport } from './routes/apply'
+import { Route as AdminRouteImport } from './routes/admin'
+import { Route as AboutCoachRouteImport } from './routes/about-coach'
 import { Route as IndexRouteImport } from './routes/index'
 
+const PrivateCoachingRoute = PrivateCoachingRouteImport.update({
+  id: '/private-coaching',
+  path: '/private-coaching',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MikesGymLocationRoute = MikesGymLocationRouteImport.update({
+  id: '/mikes-gym-location',
+  path: '/mikes-gym-location',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LocalBoxingAcademyRoute = LocalBoxingAcademyRouteImport.update({
   id: '/local-boxing-academy',
   path: '/local-boxing-academy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FounderExecutiveRetreatRoute = FounderExecutiveRetreatRouteImport.update({
+  id: '/founder-executive-retreat',
+  path: '/founder-executive-retreat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BoxingHolidayRetreatRoute = BoxingHolidayRetreatRouteImport.update({
+  id: '/boxing-holiday-retreat',
+  path: '/boxing-holiday-retreat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BookRoute = BookRouteImport.update({
+  id: '/book',
+  path: '/book',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApplyRoute = ApplyRouteImport.update({
+  id: '/apply',
+  path: '/apply',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutCoachRoute = AboutCoachRouteImport.update({
+  id: '/about-coach',
+  path: '/about-coach',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -25,37 +85,184 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about-coach': typeof AboutCoachRoute
+  '/admin': typeof AdminRoute
+  '/apply': typeof ApplyRoute
+  '/book': typeof BookRoute
+  '/boxing-holiday-retreat': typeof BoxingHolidayRetreatRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/founder-executive-retreat': typeof FounderExecutiveRetreatRoute
   '/local-boxing-academy': typeof LocalBoxingAcademyRoute
+  '/mikes-gym-location': typeof MikesGymLocationRoute
+  '/private-coaching': typeof PrivateCoachingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about-coach': typeof AboutCoachRoute
+  '/admin': typeof AdminRoute
+  '/apply': typeof ApplyRoute
+  '/book': typeof BookRoute
+  '/boxing-holiday-retreat': typeof BoxingHolidayRetreatRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/founder-executive-retreat': typeof FounderExecutiveRetreatRoute
   '/local-boxing-academy': typeof LocalBoxingAcademyRoute
+  '/mikes-gym-location': typeof MikesGymLocationRoute
+  '/private-coaching': typeof PrivateCoachingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about-coach': typeof AboutCoachRoute
+  '/admin': typeof AdminRoute
+  '/apply': typeof ApplyRoute
+  '/book': typeof BookRoute
+  '/boxing-holiday-retreat': typeof BoxingHolidayRetreatRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/founder-executive-retreat': typeof FounderExecutiveRetreatRoute
   '/local-boxing-academy': typeof LocalBoxingAcademyRoute
+  '/mikes-gym-location': typeof MikesGymLocationRoute
+  '/private-coaching': typeof PrivateCoachingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/local-boxing-academy'
+  fullPaths:
+    | '/'
+    | '/about-coach'
+    | '/admin'
+    | '/apply'
+    | '/book'
+    | '/boxing-holiday-retreat'
+    | '/contact'
+    | '/faq'
+    | '/founder-executive-retreat'
+    | '/local-boxing-academy'
+    | '/mikes-gym-location'
+    | '/private-coaching'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/local-boxing-academy'
-  id: '__root__' | '/' | '/local-boxing-academy'
+  to:
+    | '/'
+    | '/about-coach'
+    | '/admin'
+    | '/apply'
+    | '/book'
+    | '/boxing-holiday-retreat'
+    | '/contact'
+    | '/faq'
+    | '/founder-executive-retreat'
+    | '/local-boxing-academy'
+    | '/mikes-gym-location'
+    | '/private-coaching'
+  id:
+    | '__root__'
+    | '/'
+    | '/about-coach'
+    | '/admin'
+    | '/apply'
+    | '/book'
+    | '/boxing-holiday-retreat'
+    | '/contact'
+    | '/faq'
+    | '/founder-executive-retreat'
+    | '/local-boxing-academy'
+    | '/mikes-gym-location'
+    | '/private-coaching'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutCoachRoute: typeof AboutCoachRoute
+  AdminRoute: typeof AdminRoute
+  ApplyRoute: typeof ApplyRoute
+  BookRoute: typeof BookRoute
+  BoxingHolidayRetreatRoute: typeof BoxingHolidayRetreatRoute
+  ContactRoute: typeof ContactRoute
+  FaqRoute: typeof FaqRoute
+  FounderExecutiveRetreatRoute: typeof FounderExecutiveRetreatRoute
   LocalBoxingAcademyRoute: typeof LocalBoxingAcademyRoute
+  MikesGymLocationRoute: typeof MikesGymLocationRoute
+  PrivateCoachingRoute: typeof PrivateCoachingRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/private-coaching': {
+      id: '/private-coaching'
+      path: '/private-coaching'
+      fullPath: '/private-coaching'
+      preLoaderRoute: typeof PrivateCoachingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mikes-gym-location': {
+      id: '/mikes-gym-location'
+      path: '/mikes-gym-location'
+      fullPath: '/mikes-gym-location'
+      preLoaderRoute: typeof MikesGymLocationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/local-boxing-academy': {
       id: '/local-boxing-academy'
       path: '/local-boxing-academy'
       fullPath: '/local-boxing-academy'
       preLoaderRoute: typeof LocalBoxingAcademyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/founder-executive-retreat': {
+      id: '/founder-executive-retreat'
+      path: '/founder-executive-retreat'
+      fullPath: '/founder-executive-retreat'
+      preLoaderRoute: typeof FounderExecutiveRetreatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/boxing-holiday-retreat': {
+      id: '/boxing-holiday-retreat'
+      path: '/boxing-holiday-retreat'
+      fullPath: '/boxing-holiday-retreat'
+      preLoaderRoute: typeof BoxingHolidayRetreatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/book': {
+      id: '/book'
+      path: '/book'
+      fullPath: '/book'
+      preLoaderRoute: typeof BookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/apply': {
+      id: '/apply'
+      path: '/apply'
+      fullPath: '/apply'
+      preLoaderRoute: typeof ApplyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about-coach': {
+      id: '/about-coach'
+      path: '/about-coach'
+      fullPath: '/about-coach'
+      preLoaderRoute: typeof AboutCoachRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -70,8 +277,28 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutCoachRoute: AboutCoachRoute,
+  AdminRoute: AdminRoute,
+  ApplyRoute: ApplyRoute,
+  BookRoute: BookRoute,
+  BoxingHolidayRetreatRoute: BoxingHolidayRetreatRoute,
+  ContactRoute: ContactRoute,
+  FaqRoute: FaqRoute,
+  FounderExecutiveRetreatRoute: FounderExecutiveRetreatRoute,
   LocalBoxingAcademyRoute: LocalBoxingAcademyRoute,
+  MikesGymLocationRoute: MikesGymLocationRoute,
+  PrivateCoachingRoute: PrivateCoachingRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
