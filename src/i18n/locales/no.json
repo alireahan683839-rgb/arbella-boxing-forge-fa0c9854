@@ -1,134 +1,163 @@
 {
   "nav": {
-    "local": "Local Academy",
-    "holiday": "Holiday Retreat",
-    "founder": "Founder Retreat",
-    "private": "Private 1:1",
-    "coach": "The Coach",
-    "gym": "The Gym",
-    "book": "Book",
-    "apply": "Apply",
+    "local": "Lokal Akademi",
+    "holiday": "Bokseretreat",
+    "founder": "Founder-retreat",
+    "private": "Privat 1:1",
+    "coach": "Treneren",
+    "gym": "Senteret",
+    "book": "Bestill",
+    "apply": "Søk",
     "faq": "FAQ",
-    "contact": "Contact"
+    "contact": "Kontakt"
   },
   "cta": {
-    "primary": "Book your boxing experience",
-    "secondary": "Explore your path",
-    "whatsapp": "Message on WhatsApp",
-    "apply": "Apply for the retreat",
-    "trial": "Book a trial class",
-    "private": "Book private 1:1",
-    "directions": "Get directions",
-    "viewAll": "See all dates"
+    "primary": "Bestill din bokseopplevelse",
+    "secondary": "Utforsk din vei",
+    "whatsapp": "Skriv på WhatsApp",
+    "apply": "Søk på retreatet",
+    "trial": "Bestill prøvetime",
+    "private": "Bestill privat 1:1",
+    "directions": "Veibeskrivelse",
+    "viewAll": "Se alle datoer"
   },
   "home": {
-    "heroEyebrow": "Lodgey's Boxing · Hosted at Mike's Gym Marbella",
-    "heroTitle": "Train. Reset. Come back sharper.",
-    "heroSubtitle": "Premium boxing coaching in the mountains above Marbella — for locals, for travellers and for the founders who need a real reset.",
+    "heroEyebrow": "Lodgey's Boxing · På Mike's Gym Marbella",
+    "heroTitle": "Tren. Reset. Kom tilbake skarpere.",
+    "heroSubtitle": "Premium boksetrening i fjellene over Marbella — for lokale, for reisende og for gründere som trenger et ekte reset.",
     "trust": {
-      "hosted": "Hosted at Mike's Gym Marbella",
-      "levels": "All levels welcome",
-      "coaching": "Coach-led, not class-led",
-      "premium": "Premium environment"
+      "hosted": "På Mike's Gym Marbella",
+      "levels": "Alle nivåer velkommen",
+      "coaching": "Trener-ledet, ikke time-ledet",
+      "premium": "Premium miljø"
     },
     "paths": {
-      "title": "Choose your path",
-      "sub": "Three doors in. One standard.",
+      "title": "Velg din vei",
+      "sub": "Tre dører inn. Én standard.",
       "local": {
-        "title": "Local Boxing Academy",
-        "for": "For locals — kids, teens, adults and competitors.",
-        "what": "Weekly group classes, structured by level, in a real boxing gym.",
-        "next": "Book a trial class"
+        "title": "Lokal Bokseakademi",
+        "for": "For lokale — barn, ungdom, voksne og utøvere.",
+        "what": "Ukentlige gruppetimer, strukturert etter nivå, i et ekte boksesenter.",
+        "next": "Bestill prøvetime"
       },
       "holiday": {
-        "title": "Boxing Holiday Retreat",
-        "for": "For travellers who want 5, 7 or 10 days that actually change something.",
-        "what": "Twice-daily training, recovery, real food, accommodation on-site.",
-        "next": "Reserve your dates"
+        "title": "Bokseretreat på ferie",
+        "for": "For reisende som vil ha 5, 7 eller 10 dager som faktisk endrer noe.",
+        "what": "Trening to ganger daglig, restitusjon, ekte mat, overnatting på stedet.",
+        "next": "Reserver dine datoer"
       },
       "founder": {
-        "title": "Founder & Executive Retreat",
-        "for": "For founders, leaders and small executive teams.",
-        "what": "Application-led. Small groups. Built around clarity, energy and discipline.",
-        "next": "Apply now"
+        "title": "Founder- & lederretreat",
+        "for": "For gründere, ledere og små lederteam.",
+        "what": "Søknadsbasert. Små grupper. Bygget rundt klarhet, energi og disiplin.",
+        "next": "Søk nå"
       }
     },
     "authority": {
-      "title": "Real coaching. Built on structure.",
-      "sub": "Not a class with a punching bag. A programme designed by someone who has spent a life in the sport.",
-      "verifiedNote": "Credentials marked unverified are placeholders. Final titles and logos will be added once verified."
+      "title": "Ekte coaching. Bygget på struktur.",
+      "sub": "Ikke en time med sandsekk. Et program designet av noen som har levd i sporten.",
+      "verifiedNote": "Akkrediteringer merket som uverifiserte er plassholdere. Endelige titler og logoer legges til når de er verifisert."
     },
     "different": {
-      "title": "Why this isn't just another gym session",
+      "title": "Hvorfor dette ikke bare er en treningsøkt til",
       "items": {
-        "env": { "title": "The environment", "body": "A serious boxing gym in the hills above Marbella — built to train in, not to scroll in." },
-        "coach": { "title": "The coaching", "body": "Real progression. Real corrections. Real respect for the sport." },
-        "transform": { "title": "The transformation", "body": "You arrive curious. You leave moving, eating and sleeping differently." },
-        "scope": { "title": "Scalable for every level", "body": "First class to fight prep. The standard stays. The programme adapts." }
+        "env": {
+          "title": "Miljøet",
+          "body": "Et seriøst boksesenter i fjellene over Marbella — bygget for å trene i, ikke for å scrolle i."
+        },
+        "coach": {
+          "title": "Coachingen",
+          "body": "Ekte progresjon. Ekte korreksjoner. Ekte respekt for sporten."
+        },
+        "transform": {
+          "title": "Transformasjonen",
+          "body": "Du ankommer nysgjerrig. Du drar med deg å bevege, spise og sove annerledes."
+        },
+        "scope": {
+          "title": "Skalerbart for alle nivåer",
+          "body": "Første time til kampforberedelse. Standarden består. Programmet tilpasser seg."
+        }
       }
     },
     "gym": {
-      "title": "Why Mike's Gym Marbella",
-      "body": "A working boxing gym with accommodation, recovery and real food, in a mountain setting 30 minutes from Málaga airport.",
+      "title": "Hvorfor Mike's Gym Marbella",
+      "body": "Et fungerende boksesenter med overnatting, restitusjon og ekte mat, i fjellomgivelser 30 minutter fra Málaga lufthavn.",
       "items": {
-        "gym": "Full boxing gym",
-        "stay": "On-site accommodation",
-        "food": "Performance kitchen",
-        "recovery": "Recovery & sauna",
-        "setting": "Mountain setting",
-        "access": "30 min from Málaga"
+        "gym": "Komplett boksesenter",
+        "stay": "Overnatting på stedet",
+        "food": "Performance-kjøkken",
+        "recovery": "Restitusjon & badstu",
+        "setting": "Fjellomgivelser",
+        "access": "30 min fra Málaga"
       }
     },
     "outcomes": {
-      "title": "What you take home",
-      "items": ["Confidence", "Skill", "Energy", "Discipline", "Clarity", "Fitness", "A real reset"]
+      "title": "Hva du tar med deg hjem",
+      "items": [
+        "Selvtillit",
+        "Teknikk",
+        "Energi",
+        "Disiplin",
+        "Klarhet",
+        "Form",
+        "Et ekte reset"
+      ]
     },
     "holidayPreview": {
-      "title": "The Holiday Retreat",
-      "sub": "Five, seven or ten days. Boxing, recovery, real food, mountain air.",
-      "for": "Who it's for",
-      "forBody": "Travellers who want something real. Beginners welcome. Fight-fit guests welcomed too.",
-      "includes": "What's included",
-      "addons": "Optional add-ons",
-      "addonsBody": "Airport transfer, private 1:1 sessions, room upgrades.",
-      "cta": "Reserve a place"
+      "title": "Bokseretreatet",
+      "sub": "Fem, syv eller ti dager. Boksing, restitusjon, ekte mat, fjelluft.",
+      "for": "Hvem det er for",
+      "forBody": "Reisende som vil ha noe ekte. Nybegynnere velkomne. Kampform-gjester også.",
+      "includes": "Hva som er inkludert",
+      "addons": "Valgfrie tillegg",
+      "addonsBody": "Flyplassoverføring, private 1:1-økter, romoppgraderinger.",
+      "cta": "Reserver plass"
     },
     "founderPreview": {
-      "title": "Founder & Executive Retreat",
-      "sub": "Application only. Small groups. Built to bring you back sharper.",
-      "body": "Step away from the noise. Train with structure. Eat properly. Sleep deeply. Come back clearer, stronger, calmer.",
-      "cta": "Apply for the retreat"
+      "title": "Founder- & lederretreat",
+      "sub": "Kun søknad. Små grupper. Bygget for å bringe deg tilbake skarpere.",
+      "body": "Trekk deg unna støyen. Tren med struktur. Spis ordentlig. Sov dypt. Kom tilbake klarere, sterkere, roligere.",
+      "cta": "Søk på retreatet"
     },
-    "testimonials": { "title": "What guests say" },
+    "testimonials": {
+      "title": "Hva gjester sier"
+    },
     "pricing": {
-      "title": "A simple way in",
-      "sub": "Final pricing per date and package. Indicative starting points below.",
-      "trial": "Trial Class",
-      "retreat": "Holiday Retreat",
-      "executive": "Executive Retreat",
-      "from": "from"
+      "title": "En enkel vei inn",
+      "sub": "Endelig pris per dato og pakke. Veiledende startpunkter under.",
+      "trial": "Prøvetime",
+      "retreat": "Bokseretreat",
+      "executive": "Lederretreat",
+      "from": "fra"
     },
     "location": {
-      "title": "Where you'll train",
-      "sub": "In the hills above La Cala de Mijas — directions matter."
+      "title": "Hvor du vil trene",
+      "sub": "I fjellene over La Cala de Mijas — veibeskrivelse betyr noe."
     },
-    "faqPreview": { "title": "Quick answers", "all": "See all FAQs" },
+    "faqPreview": {
+      "title": "Raske svar",
+      "all": "Se alle FAQs"
+    },
     "finalCta": {
-      "title": "Glove up.",
-      "sub": "Pick a door. Book your dates. The rest is on us."
+      "title": "Hanskene på.",
+      "sub": "Velg en dør. Bestill datoene. Resten er på oss."
     }
   },
   "footer": {
-    "tagline": "Premium boxing coaching, hosted at Mike's Gym Marbella.",
-    "rights": "All rights reserved.",
-    "hostedAt": "Hosted at Mike's Gym Marbella"
+    "tagline": "Premium boksecoaching, på Mike's Gym Marbella.",
+    "rights": "Alle rettigheter forbeholdt.",
+    "hostedAt": "På Mike's Gym Marbella"
   },
-  "stickyCta": "Book or message",
+  "stickyCta": "Bestill eller meld",
   "common": {
-    "soon": "Coming soon",
-    "placeholder": "Editable placeholder",
-    "loading": "Loading…",
-    "requestDates": "Request availability"
+    "soon": "Kommer snart",
+    "placeholder": "Redigerbar plassholder",
+    "loading": "Laster…",
+    "requestDates": "Forespør tilgjengelighet"
   },
-  "languages": { "en": "English", "es": "Español", "sv": "Svenska" }
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "sv": "Svenska"
+  }
 }

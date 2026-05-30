@@ -1,134 +1,163 @@
 {
   "nav": {
-    "local": "Local Academy",
-    "holiday": "Holiday Retreat",
+    "local": "Lokalna Akademija",
+    "holiday": "Boksački Retreat",
     "founder": "Founder Retreat",
-    "private": "Private 1:1",
-    "coach": "The Coach",
-    "gym": "The Gym",
-    "book": "Book",
-    "apply": "Apply",
+    "private": "Privatno 1:1",
+    "coach": "Trener",
+    "gym": "Dvorana",
+    "book": "Rezerviraj",
+    "apply": "Prijavi se",
     "faq": "FAQ",
-    "contact": "Contact"
+    "contact": "Kontakt"
   },
   "cta": {
-    "primary": "Book your boxing experience",
-    "secondary": "Explore your path",
-    "whatsapp": "Message on WhatsApp",
-    "apply": "Apply for the retreat",
-    "trial": "Book a trial class",
-    "private": "Book private 1:1",
-    "directions": "Get directions",
-    "viewAll": "See all dates"
+    "primary": "Rezerviraj svoje boksačko iskustvo",
+    "secondary": "Istraži svoj put",
+    "whatsapp": "Pišite na WhatsApp",
+    "apply": "Prijavi se za retreat",
+    "trial": "Rezerviraj probni trening",
+    "private": "Rezerviraj privatni 1:1",
+    "directions": "Upute",
+    "viewAll": "Vidi sve datume"
   },
   "home": {
-    "heroEyebrow": "Lodgey's Boxing · Hosted at Mike's Gym Marbella",
-    "heroTitle": "Train. Reset. Come back sharper.",
-    "heroSubtitle": "Premium boxing coaching in the mountains above Marbella — for locals, for travellers and for the founders who need a real reset.",
+    "heroEyebrow": "Lodgey's Boxing · U Mike's Gym Marbella",
+    "heroTitle": "Treniraj. Resetiraj. Vrati se oštriji.",
+    "heroSubtitle": "Premium boksački coaching u planinama iznad Marbelle — za lokalce, putnike i osnivače kojima treba pravi reset.",
     "trust": {
-      "hosted": "Hosted at Mike's Gym Marbella",
-      "levels": "All levels welcome",
-      "coaching": "Coach-led, not class-led",
-      "premium": "Premium environment"
+      "hosted": "U Mike's Gym Marbella",
+      "levels": "Svi razini dobrodošli",
+      "coaching": "Vodi trener, ne grupa",
+      "premium": "Premium okruženje"
     },
     "paths": {
-      "title": "Choose your path",
-      "sub": "Three doors in. One standard.",
+      "title": "Odaberi svoj put",
+      "sub": "Tri ulaza. Jedan standard.",
       "local": {
-        "title": "Local Boxing Academy",
-        "for": "For locals — kids, teens, adults and competitors.",
-        "what": "Weekly group classes, structured by level, in a real boxing gym.",
-        "next": "Book a trial class"
+        "title": "Lokalna Boksačka Akademija",
+        "for": "Za lokalce — djecu, tinejdžere, odrasle i natjecatelje.",
+        "what": "Tjedni grupni treninzi, strukturirani po razini, u pravoj boksačkoj dvorani.",
+        "next": "Rezerviraj probni trening"
       },
       "holiday": {
-        "title": "Boxing Holiday Retreat",
-        "for": "For travellers who want 5, 7 or 10 days that actually change something.",
-        "what": "Twice-daily training, recovery, real food, accommodation on-site.",
-        "next": "Reserve your dates"
+        "title": "Boksački Retreat na Odmoru",
+        "for": "Za putnike koji žele 5, 7 ili 10 dana koji stvarno mijenjaju nešto.",
+        "what": "Trening dvaput dnevno, oporavak, prava hrana, smještaj na licu mjesta.",
+        "next": "Rezerviraj svoje datume"
       },
       "founder": {
         "title": "Founder & Executive Retreat",
-        "for": "For founders, leaders and small executive teams.",
-        "what": "Application-led. Small groups. Built around clarity, energy and discipline.",
-        "next": "Apply now"
+        "for": "Za osnivače, vođe i male executive timove.",
+        "what": "Po prijavi. Male grupe. Izgrađen oko jasnoće, energije i discipline.",
+        "next": "Prijavi se sada"
       }
     },
     "authority": {
-      "title": "Real coaching. Built on structure.",
-      "sub": "Not a class with a punching bag. A programme designed by someone who has spent a life in the sport.",
-      "verifiedNote": "Credentials marked unverified are placeholders. Final titles and logos will be added once verified."
+      "title": "Pravi coaching. Izgrađen na strukturi.",
+      "sub": "Nije trening s vrećom. Program koji je dizajnirao netko tko je proveo život u sportu.",
+      "verifiedNote": "Akreditacije označene kao neverificirane su rezervirana mjesta. Konačni nazivi i logotipi će biti dodani nakon verifikacije."
     },
     "different": {
-      "title": "Why this isn't just another gym session",
+      "title": "Zašto ovo nije samo još jedan trening",
       "items": {
-        "env": { "title": "The environment", "body": "A serious boxing gym in the hills above Marbella — built to train in, not to scroll in." },
-        "coach": { "title": "The coaching", "body": "Real progression. Real corrections. Real respect for the sport." },
-        "transform": { "title": "The transformation", "body": "You arrive curious. You leave moving, eating and sleeping differently." },
-        "scope": { "title": "Scalable for every level", "body": "First class to fight prep. The standard stays. The programme adapts." }
+        "env": {
+          "title": "Okruženje",
+          "body": "Ozbiljna boksačka dvorana u brdima iznad Marbelle — napravljena za trening, ne za scrollanje."
+        },
+        "coach": {
+          "title": "Coaching",
+          "body": "Pravi napredak. Prave korekcije. Pravo poštovanje prema sportu."
+        },
+        "transform": {
+          "title": "Transformacija",
+          "body": "Dolaziš znatiželjan. Odlaziš krećući se, jedući i spavajući drugačije."
+        },
+        "scope": {
+          "title": "Skalabilno za svaku razinu",
+          "body": "Od prvog treninga do pripreme za meč. Standard ostaje. Program se prilagođava."
+        }
       }
     },
     "gym": {
-      "title": "Why Mike's Gym Marbella",
-      "body": "A working boxing gym with accommodation, recovery and real food, in a mountain setting 30 minutes from Málaga airport.",
+      "title": "Zašto Mike's Gym Marbella",
+      "body": "Radna boksačka dvorana sa smještajem, oporavkom i pravom hranom, u planinskom okruženju 30 minuta od zračne luke Málaga.",
       "items": {
-        "gym": "Full boxing gym",
-        "stay": "On-site accommodation",
-        "food": "Performance kitchen",
-        "recovery": "Recovery & sauna",
-        "setting": "Mountain setting",
-        "access": "30 min from Málaga"
+        "gym": "Potpuna boksačka dvorana",
+        "stay": "Smještaj na licu mjesta",
+        "food": "Performance kuhinja",
+        "recovery": "Oporavak & sauna",
+        "setting": "Planinsko okruženje",
+        "access": "30 min od Málage"
       }
     },
     "outcomes": {
-      "title": "What you take home",
-      "items": ["Confidence", "Skill", "Energy", "Discipline", "Clarity", "Fitness", "A real reset"]
+      "title": "Što nosiš kući",
+      "items": [
+        "Samopouzdanje",
+        "Tehnika",
+        "Energija",
+        "Disciplina",
+        "Jasnoća",
+        "Forma",
+        "Pravi reset"
+      ]
     },
     "holidayPreview": {
-      "title": "The Holiday Retreat",
-      "sub": "Five, seven or ten days. Boxing, recovery, real food, mountain air.",
-      "for": "Who it's for",
-      "forBody": "Travellers who want something real. Beginners welcome. Fight-fit guests welcomed too.",
-      "includes": "What's included",
-      "addons": "Optional add-ons",
-      "addonsBody": "Airport transfer, private 1:1 sessions, room upgrades.",
-      "cta": "Reserve a place"
+      "title": "Boksački Retreat",
+      "sub": "Pet, sedam ili deset dana. Boks, oporavak, prava hrana, planinski zrak.",
+      "for": "Kome je namijenjen",
+      "forBody": "Putnicima koji žele nešto pravo. Početnici dobrodošli. I borci u formi.",
+      "includes": "Što je uključeno",
+      "addons": "Opcionalni dodaci",
+      "addonsBody": "Transfer iz zračne luke, privatne 1:1 sesije, nadogradnja sobe.",
+      "cta": "Rezerviraj mjesto"
     },
     "founderPreview": {
       "title": "Founder & Executive Retreat",
-      "sub": "Application only. Small groups. Built to bring you back sharper.",
-      "body": "Step away from the noise. Train with structure. Eat properly. Sleep deeply. Come back clearer, stronger, calmer.",
-      "cta": "Apply for the retreat"
+      "sub": "Samo po prijavi. Male grupe. Izgrađen da te vrati oštrijeg.",
+      "body": "Izađi iz buke. Treniraj sa strukturom. Jedi kako treba. Spavaj duboko. Vrati se jasniji, jači, mirniji.",
+      "cta": "Prijavi se za retreat"
     },
-    "testimonials": { "title": "What guests say" },
+    "testimonials": {
+      "title": "Što gosti kažu"
+    },
     "pricing": {
-      "title": "A simple way in",
-      "sub": "Final pricing per date and package. Indicative starting points below.",
-      "trial": "Trial Class",
-      "retreat": "Holiday Retreat",
+      "title": "Jednostavan ulaz",
+      "sub": "Konačna cijena po datumu i paketu. Indikativne polazne točke ispod.",
+      "trial": "Probni trening",
+      "retreat": "Boksački Retreat",
       "executive": "Executive Retreat",
-      "from": "from"
+      "from": "od"
     },
     "location": {
-      "title": "Where you'll train",
-      "sub": "In the hills above La Cala de Mijas — directions matter."
+      "title": "Gdje ćeš trenirati",
+      "sub": "U brdima iznad La Cala de Mijasa — upute su važne."
     },
-    "faqPreview": { "title": "Quick answers", "all": "See all FAQs" },
+    "faqPreview": {
+      "title": "Brzi odgovori",
+      "all": "Vidi sve FAQ"
+    },
     "finalCta": {
-      "title": "Glove up.",
-      "sub": "Pick a door. Book your dates. The rest is on us."
+      "title": "Rukavice na ruke.",
+      "sub": "Odaberi vrata. Rezerviraj datume. Ostalo je na nama."
     }
   },
   "footer": {
-    "tagline": "Premium boxing coaching, hosted at Mike's Gym Marbella.",
-    "rights": "All rights reserved.",
-    "hostedAt": "Hosted at Mike's Gym Marbella"
+    "tagline": "Premium boksački coaching, u Mike's Gym Marbella.",
+    "rights": "Sva prava pridržana.",
+    "hostedAt": "U Mike's Gym Marbella"
   },
-  "stickyCta": "Book or message",
+  "stickyCta": "Rezerviraj ili piši",
   "common": {
-    "soon": "Coming soon",
-    "placeholder": "Editable placeholder",
-    "loading": "Loading…",
-    "requestDates": "Request availability"
+    "soon": "Uskoro",
+    "placeholder": "Uredivi placeholder",
+    "loading": "Učitavanje…",
+    "requestDates": "Zatraži dostupnost"
   },
-  "languages": { "en": "English", "es": "Español", "sv": "Svenska" }
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "sv": "Svenska"
+  }
 }

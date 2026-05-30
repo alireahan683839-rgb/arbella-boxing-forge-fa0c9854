@@ -1,134 +1,163 @@
 {
   "nav": {
-    "local": "Local Academy",
-    "holiday": "Holiday Retreat",
-    "founder": "Founder Retreat",
-    "private": "Private 1:1",
-    "coach": "The Coach",
-    "gym": "The Gym",
-    "book": "Book",
-    "apply": "Apply",
+    "local": "Académie Locale",
+    "holiday": "Stage de Boxe",
+    "founder": "Retraite Founder",
+    "private": "Privé 1:1",
+    "coach": "Le Coach",
+    "gym": "Le Gym",
+    "book": "Réserver",
+    "apply": "Postuler",
     "faq": "FAQ",
     "contact": "Contact"
   },
   "cta": {
-    "primary": "Book your boxing experience",
-    "secondary": "Explore your path",
-    "whatsapp": "Message on WhatsApp",
-    "apply": "Apply for the retreat",
-    "trial": "Book a trial class",
-    "private": "Book private 1:1",
-    "directions": "Get directions",
-    "viewAll": "See all dates"
+    "primary": "Réserve ton expérience de boxe",
+    "secondary": "Explore ta voie",
+    "whatsapp": "Écris sur WhatsApp",
+    "apply": "Postuler pour la retraite",
+    "trial": "Réserver un cours d'essai",
+    "private": "Réserver un 1:1 privé",
+    "directions": "Itinéraire",
+    "viewAll": "Voir toutes les dates"
   },
   "home": {
-    "heroEyebrow": "Lodgey's Boxing · Hosted at Mike's Gym Marbella",
-    "heroTitle": "Train. Reset. Come back sharper.",
-    "heroSubtitle": "Premium boxing coaching in the mountains above Marbella — for locals, for travellers and for the founders who need a real reset.",
+    "heroEyebrow": "Lodgey's Boxing · Chez Mike's Gym Marbella",
+    "heroTitle": "Entraîne. Reset. Reviens plus affûté.",
+    "heroSubtitle": "Coaching de boxe premium dans les montagnes au-dessus de Marbella — pour les locaux, les voyageurs et les founders qui ont besoin d'un vrai reset.",
     "trust": {
-      "hosted": "Hosted at Mike's Gym Marbella",
-      "levels": "All levels welcome",
-      "coaching": "Coach-led, not class-led",
-      "premium": "Premium environment"
+      "hosted": "Chez Mike's Gym Marbella",
+      "levels": "Tous niveaux bienvenus",
+      "coaching": "Mené par le coach, pas par le cours",
+      "premium": "Environnement premium"
     },
     "paths": {
-      "title": "Choose your path",
-      "sub": "Three doors in. One standard.",
+      "title": "Choisis ta voie",
+      "sub": "Trois portes. Un seul standard.",
       "local": {
-        "title": "Local Boxing Academy",
-        "for": "For locals — kids, teens, adults and competitors.",
-        "what": "Weekly group classes, structured by level, in a real boxing gym.",
-        "next": "Book a trial class"
+        "title": "Académie de Boxe Locale",
+        "for": "Pour les locaux — enfants, ados, adultes et compétiteurs.",
+        "what": "Cours collectifs hebdomadaires, structurés par niveau, dans une vraie salle de boxe.",
+        "next": "Réserver un cours d'essai"
       },
       "holiday": {
-        "title": "Boxing Holiday Retreat",
-        "for": "For travellers who want 5, 7 or 10 days that actually change something.",
-        "what": "Twice-daily training, recovery, real food, accommodation on-site.",
-        "next": "Reserve your dates"
+        "title": "Stage de Boxe en Vacances",
+        "for": "Pour les voyageurs qui veulent 5, 7 ou 10 jours qui changent vraiment quelque chose.",
+        "what": "Entraînement biquotidien, récupération, vraie nourriture, hébergement sur place.",
+        "next": "Réserver tes dates"
       },
       "founder": {
-        "title": "Founder & Executive Retreat",
-        "for": "For founders, leaders and small executive teams.",
-        "what": "Application-led. Small groups. Built around clarity, energy and discipline.",
-        "next": "Apply now"
+        "title": "Retraite Founder & Executive",
+        "for": "Pour les founders, dirigeants et petites équipes exécutives.",
+        "what": "Sur candidature. Petits groupes. Construite autour de la clarté, de l'énergie et de la discipline.",
+        "next": "Postuler maintenant"
       }
     },
     "authority": {
-      "title": "Real coaching. Built on structure.",
-      "sub": "Not a class with a punching bag. A programme designed by someone who has spent a life in the sport.",
-      "verifiedNote": "Credentials marked unverified are placeholders. Final titles and logos will be added once verified."
+      "title": "Vrai coaching. Construit sur la structure.",
+      "sub": "Pas un cours avec un sac de frappe. Un programme conçu par quelqu'un qui a passé sa vie dans le sport.",
+      "verifiedNote": "Les accréditations marquées non vérifiées sont des placeholders. Titres et logos définitifs seront ajoutés une fois vérifiés."
     },
     "different": {
-      "title": "Why this isn't just another gym session",
+      "title": "Pourquoi ce n'est pas juste une autre séance de gym",
       "items": {
-        "env": { "title": "The environment", "body": "A serious boxing gym in the hills above Marbella — built to train in, not to scroll in." },
-        "coach": { "title": "The coaching", "body": "Real progression. Real corrections. Real respect for the sport." },
-        "transform": { "title": "The transformation", "body": "You arrive curious. You leave moving, eating and sleeping differently." },
-        "scope": { "title": "Scalable for every level", "body": "First class to fight prep. The standard stays. The programme adapts." }
+        "env": {
+          "title": "L'environnement",
+          "body": "Une vraie salle de boxe dans les montagnes au-dessus de Marbella — faite pour s'entraîner, pas pour scroller."
+        },
+        "coach": {
+          "title": "Le coaching",
+          "body": "Vraie progression. Vraies corrections. Vrai respect pour le sport."
+        },
+        "transform": {
+          "title": "La transformation",
+          "body": "Tu arrives curieux. Tu repars en bougeant, mangeant et dormant différemment."
+        },
+        "scope": {
+          "title": "Adapté à tous les niveaux",
+          "body": "Du premier cours à la préparation de combat. Le standard reste. Le programme s'adapte."
+        }
       }
     },
     "gym": {
-      "title": "Why Mike's Gym Marbella",
-      "body": "A working boxing gym with accommodation, recovery and real food, in a mountain setting 30 minutes from Málaga airport.",
+      "title": "Pourquoi Mike's Gym Marbella",
+      "body": "Une vraie salle de boxe avec hébergement, récupération et vraie nourriture, en montagne à 30 minutes de l'aéroport de Málaga.",
       "items": {
-        "gym": "Full boxing gym",
-        "stay": "On-site accommodation",
-        "food": "Performance kitchen",
-        "recovery": "Recovery & sauna",
-        "setting": "Mountain setting",
-        "access": "30 min from Málaga"
+        "gym": "Salle de boxe complète",
+        "stay": "Hébergement sur place",
+        "food": "Cuisine performance",
+        "recovery": "Récupération & sauna",
+        "setting": "Cadre montagnard",
+        "access": "30 min de Málaga"
       }
     },
     "outcomes": {
-      "title": "What you take home",
-      "items": ["Confidence", "Skill", "Energy", "Discipline", "Clarity", "Fitness", "A real reset"]
+      "title": "Ce que tu ramènes chez toi",
+      "items": [
+        "Confiance",
+        "Technique",
+        "Énergie",
+        "Discipline",
+        "Clarté",
+        "Forme",
+        "Un vrai reset"
+      ]
     },
     "holidayPreview": {
-      "title": "The Holiday Retreat",
-      "sub": "Five, seven or ten days. Boxing, recovery, real food, mountain air.",
-      "for": "Who it's for",
-      "forBody": "Travellers who want something real. Beginners welcome. Fight-fit guests welcomed too.",
-      "includes": "What's included",
-      "addons": "Optional add-ons",
-      "addonsBody": "Airport transfer, private 1:1 sessions, room upgrades.",
-      "cta": "Reserve a place"
+      "title": "Le Stage de Boxe",
+      "sub": "Cinq, sept ou dix jours. Boxe, récupération, vraie nourriture, air de montagne.",
+      "for": "Pour qui",
+      "forBody": "Voyageurs qui veulent du vrai. Débutants bienvenus. Compétiteurs aussi.",
+      "includes": "Ce qui est inclus",
+      "addons": "Options en supplément",
+      "addonsBody": "Transfert aéroport, sessions privées 1:1, upgrade chambre.",
+      "cta": "Réserver une place"
     },
     "founderPreview": {
-      "title": "Founder & Executive Retreat",
-      "sub": "Application only. Small groups. Built to bring you back sharper.",
-      "body": "Step away from the noise. Train with structure. Eat properly. Sleep deeply. Come back clearer, stronger, calmer.",
-      "cta": "Apply for the retreat"
+      "title": "Retraite Founder & Executive",
+      "sub": "Sur candidature uniquement. Petits groupes. Conçue pour te ramener plus affûté.",
+      "body": "Sors du bruit. Entraîne-toi avec structure. Mange correctement. Dors profondément. Reviens plus clair, plus fort, plus calme.",
+      "cta": "Postuler pour la retraite"
     },
-    "testimonials": { "title": "What guests say" },
+    "testimonials": {
+      "title": "Ce que disent les invités"
+    },
     "pricing": {
-      "title": "A simple way in",
-      "sub": "Final pricing per date and package. Indicative starting points below.",
-      "trial": "Trial Class",
-      "retreat": "Holiday Retreat",
-      "executive": "Executive Retreat",
-      "from": "from"
+      "title": "Une porte d'entrée simple",
+      "sub": "Prix final selon dates et formule. Points de départ indicatifs ci-dessous.",
+      "trial": "Cours d'essai",
+      "retreat": "Stage de Boxe",
+      "executive": "Retraite Executive",
+      "from": "à partir de"
     },
     "location": {
-      "title": "Where you'll train",
-      "sub": "In the hills above La Cala de Mijas — directions matter."
+      "title": "Où tu vas t'entraîner",
+      "sub": "Dans les collines au-dessus de La Cala de Mijas — l'itinéraire compte."
     },
-    "faqPreview": { "title": "Quick answers", "all": "See all FAQs" },
+    "faqPreview": {
+      "title": "Réponses rapides",
+      "all": "Voir toutes les FAQs"
+    },
     "finalCta": {
-      "title": "Glove up.",
-      "sub": "Pick a door. Book your dates. The rest is on us."
+      "title": "Gants aux poings.",
+      "sub": "Choisis une porte. Réserve tes dates. Le reste, c'est nous."
     }
   },
   "footer": {
-    "tagline": "Premium boxing coaching, hosted at Mike's Gym Marbella.",
-    "rights": "All rights reserved.",
-    "hostedAt": "Hosted at Mike's Gym Marbella"
+    "tagline": "Coaching de boxe premium, chez Mike's Gym Marbella.",
+    "rights": "Tous droits réservés.",
+    "hostedAt": "Chez Mike's Gym Marbella"
   },
-  "stickyCta": "Book or message",
+  "stickyCta": "Réserver ou écrire",
   "common": {
-    "soon": "Coming soon",
-    "placeholder": "Editable placeholder",
-    "loading": "Loading…",
-    "requestDates": "Request availability"
+    "soon": "Bientôt disponible",
+    "placeholder": "Placeholder éditable",
+    "loading": "Chargement…",
+    "requestDates": "Demander les disponibilités"
   },
-  "languages": { "en": "English", "es": "Español", "sv": "Svenska" }
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "sv": "Svenska"
+  }
 }
