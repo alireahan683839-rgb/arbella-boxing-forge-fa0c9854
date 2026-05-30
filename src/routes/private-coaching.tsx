@@ -36,7 +36,12 @@ function Page() {
         </ul>
       </Section>
       <Section title="Pricing">
-        <p>Single sessions, 5-pack and 10-pack available. Deposit secures the slot.</p>
+        <ul>
+          <li><strong>1 hour 1:1:</strong> €60</li>
+          <li><strong>30 min 1:1:</strong> €30</li>
+          <li><strong>Group class:</strong> €15</li>
+        </ul>
+        <p>5-pack and 10-pack available. Deposit secures the slot.</p>
       </Section>
     </PageShell>
   );
