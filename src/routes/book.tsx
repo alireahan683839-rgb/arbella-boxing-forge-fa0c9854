@@ -43,6 +43,11 @@ function Page() {
 
   return (
     <PageShell eyebrow="Book" title="Book your session" intro="Local classes and private sessions are booked directly. Holiday retreats secure your dates with a deposit.">
+      <ul className="text-sm text-muted-foreground space-y-1 mb-2">
+        <li><strong className="text-foreground">Trial / group class:</strong> €15</li>
+        <li><strong className="text-foreground">Private 1:1:</strong> €60 per hour · €30 per 30 min</li>
+        <li><strong className="text-foreground">Holiday retreat:</strong> €180 per day — includes room, accommodation and 3 meals a day</li>
+      </ul>
       <form onSubmit={onSubmit} className="mt-8 space-y-6">
         <div>
           <label className="text-xs uppercase tracking-widest text-muted-foreground mb-3 block">Choose</label>

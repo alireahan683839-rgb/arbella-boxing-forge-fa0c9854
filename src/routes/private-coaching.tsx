@@ -41,6 +41,7 @@ function Page() {
           <li><strong>30 min 1:1:</strong> €30</li>
           <li><strong>Group class:</strong> €15</li>
           <li><strong>Monthly package:</strong> €700 for 3 one-hour 1:1 sessions per week for a month</li>
+          <li><strong>Holiday retreat:</strong> €180 per day — includes room, accommodation and 3 meals a day (extra 1:1 €60/hr · €30/30 min)</li>
         </ul>
         <p>5-pack and 10-pack available. Deposit secures the slot.</p>
       </Section>
