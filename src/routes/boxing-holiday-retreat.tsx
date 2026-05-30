@@ -38,7 +38,7 @@ function Page() {
       </Section>
       <Section title="Lengths & pricing">
         <ul>
-          <li><strong>€180 per day</strong> — includes room, accommodation and 3 meals a day</li>
+          <li><strong>€180 per day</strong> — includes room, accommodation and 3 meals a day. Extra 1:1 coaching: €60/hr or €30/30 min.</li>
           <li><strong>5 days</strong> — short reset</li>
           <li><strong>7 days</strong> — the classic</li>
           <li><strong>10 days</strong> — full transformation</li>
