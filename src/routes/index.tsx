@@ -39,7 +39,7 @@ function Index() {
       <section className="relative min-h-[100svh] flex items-end overflow-hidden">
         <img
           src={heroImg}
-          alt="Boxer training at Mike's Gym Marbella"
+          alt="Coach Mark Lodgey training at Mike's Gym Marbella"
           className="absolute inset-0 w-full h-full object-cover"
           loading="eager"
         />
