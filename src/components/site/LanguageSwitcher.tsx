@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ChevronDown, Check } from "lucide-react";
-import { SUPPORTED_LANGS, LANG_LABELS, LANG_FLAGS, type SupportedLang } from "@/lib/i18n";
+import { SUPPORTED_LANGS, LANG_LABELS, flagUrl, type SupportedLang } from "@/lib/i18n";
 
 export function LanguageSwitcher({ className = "" }: { className?: string }) {
   const { i18n } = useTranslation();
@@ -26,8 +26,15 @@ export function LanguageSwitcher({ className = "" }: { className?: string }) {
         aria-label="Select language"
         aria-expanded={open}
       >
-        <span className="text-base leading-none">{LANG_FLAGS[current]}</span>
-        <span>{current.toUpperCase()}</span>
+        <img
+          src={flagUrl(current, 40)}
+          srcSet={`${flagUrl(current, 40)} 1x, ${flagUrl(current, 80)} 2x`}
+          width={20}
+          height={15}
+          alt=""
+          className="block h-[15px] w-[20px] object-cover"
+          loading="lazy"
+        />
         <ChevronDown className={`h-3 w-3 transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
       {open && (
@@ -44,9 +51,16 @@ export function LanguageSwitcher({ className = "" }: { className?: string }) {
                   current === lang ? "text-primary" : "text-foreground"
                 }`}
               >
-                <span className="text-lg leading-none">{LANG_FLAGS[lang]}</span>
+                <img
+                  src={flagUrl(lang, 40)}
+                  srcSet={`${flagUrl(lang, 40)} 1x, ${flagUrl(lang, 80)} 2x`}
+                  width={24}
+                  height={18}
+                  alt=""
+                  className="block h-[18px] w-[24px] object-cover shrink-0"
+                  loading="lazy"
+                />
                 <span className="flex-1">{LANG_LABELS[lang]}</span>
-                <span className="text-xs text-muted-foreground uppercase tracking-widest">{lang}</span>
                 {current === lang && <Check className="h-3.5 w-3.5 text-primary" />}
               </button>
             </li>
