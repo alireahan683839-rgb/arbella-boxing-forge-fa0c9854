@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { ArrowRight, MapPin, MessageCircle, Check } from "lucide-react";
-import heroImg from "@/assets/hero-boxer.jpg";
+import heroImg from "@/assets/hero-coach.jpg";
 import cardLocal from "@/assets/card-local.jpg";
 import cardHoliday from "@/assets/card-holiday.jpg";
 import cardFounder from "@/assets/card-founder.jpg";
@@ -39,7 +39,7 @@ function Index() {
       <section className="relative min-h-[100svh] flex items-end overflow-hidden">
         <img
           src={heroImg}
-          alt="Boxer training at Mike's Gym Marbella"
+          alt="Coach Mark Lodgey training at Mike's Gym Marbella"
           className="absolute inset-0 w-full h-full object-cover"
           loading="eager"
         />
