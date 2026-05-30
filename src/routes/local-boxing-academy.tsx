@@ -44,7 +44,12 @@ function Page() {
         </ul>
       </Section>
       <Section title="Pricing">
-        <p>Trial class and monthly memberships available. Final pricing confirmed at booking.</p>
+        <ul>
+          <li><strong>Group class:</strong> €15 per class</li>
+          <li><strong>Private 1:1 (30 min):</strong> €30</li>
+          <li><strong>Private 1:1 (1 hour):</strong> €60</li>
+        </ul>
+        <p>Monthly memberships available. Final pricing confirmed at booking.</p>
       </Section>
     </PageShell>
   );
