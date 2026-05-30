@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { ArrowRight, MapPin, MessageCircle, Check } from "lucide-react";
-import heroImg from "@/assets/hero-boxer.jpg";
+import heroImg from "@/assets/hero-coach.jpg";
 import cardLocal from "@/assets/card-local.jpg";
 import cardHoliday from "@/assets/card-holiday.jpg";
 import cardFounder from "@/assets/card-founder.jpg";
