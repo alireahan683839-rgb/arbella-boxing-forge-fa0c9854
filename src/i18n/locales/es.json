@@ -1,0 +1,134 @@
+{
+  "nav": {
+    "local": "Academia Local",
+    "holiday": "Retiro de Boxeo",
+    "founder": "Retiro Ejecutivo",
+    "private": "Privado 1:1",
+    "coach": "El Coach",
+    "gym": "El Gym",
+    "book": "Reservar",
+    "apply": "Solicitar",
+    "faq": "FAQ",
+    "contact": "Contacto"
+  },
+  "cta": {
+    "primary": "Reserva tu experiencia de boxeo",
+    "secondary": "Explora tu camino",
+    "whatsapp": "Escríbenos por WhatsApp",
+    "apply": "Solicitar el retiro",
+    "trial": "Reservar clase de prueba",
+    "private": "Reservar 1:1 privado",
+    "directions": "Cómo llegar",
+    "viewAll": "Ver todas las fechas"
+  },
+  "home": {
+    "heroEyebrow": "Lodgey's Boxing · En Mike's Gym Marbella",
+    "heroTitle": "Entrena. Reinicia. Vuelve más afilado.",
+    "heroSubtitle": "Coaching de boxeo premium en las montañas sobre Marbella — para locales, viajeros y founders que necesitan un reset real.",
+    "trust": {
+      "hosted": "En Mike's Gym Marbella",
+      "levels": "Todos los niveles",
+      "coaching": "Coach real, no clase masiva",
+      "premium": "Entorno premium"
+    },
+    "paths": {
+      "title": "Elige tu camino",
+      "sub": "Tres puertas. Un mismo estándar.",
+      "local": {
+        "title": "Academia de Boxeo Local",
+        "for": "Para locales — niños, adolescentes, adultos y competidores.",
+        "what": "Clases grupales semanales, por nivel, en un gym de boxeo real.",
+        "next": "Reservar clase de prueba"
+      },
+      "holiday": {
+        "title": "Retiro de Boxeo",
+        "for": "Para viajeros que quieren 5, 7 o 10 días que cambien algo de verdad.",
+        "what": "Doble sesión diaria, recuperación, comida real, alojamiento incluido.",
+        "next": "Reserva tus fechas"
+      },
+      "founder": {
+        "title": "Retiro de Founders & Ejecutivos",
+        "for": "Para founders, líderes y equipos pequeños.",
+        "what": "Por solicitud. Grupos reducidos. Claridad, energía y disciplina.",
+        "next": "Solicitar plaza"
+      }
+    },
+    "authority": {
+      "title": "Coaching de verdad. Con estructura.",
+      "sub": "No una clase con un saco. Un programa diseñado por alguien que vive el deporte.",
+      "verifiedNote": "Las credenciales sin verificar son provisionales. Se publicarán títulos y logos finales una vez confirmados."
+    },
+    "different": {
+      "title": "Por qué no es una sesión de gym más",
+      "items": {
+        "env": { "title": "El entorno", "body": "Un gym de boxeo serio en las montañas sobre Marbella — para entrenar, no para hacer scroll." },
+        "coach": { "title": "El coaching", "body": "Progresión real. Correcciones reales. Respeto real por el deporte." },
+        "transform": { "title": "La transformación", "body": "Llegas con curiosidad. Te vas moviéndote, comiendo y durmiendo distinto." },
+        "scope": { "title": "Escalable para todos los niveles", "body": "Desde tu primera clase hasta preparación de combate. El estándar se mantiene." }
+      }
+    },
+    "gym": {
+      "title": "Por qué Mike's Gym Marbella",
+      "body": "Un gym de boxeo real con alojamiento, recuperación y comida de calidad, en la montaña a 30 minutos del aeropuerto de Málaga.",
+      "items": {
+        "gym": "Gym de boxeo completo",
+        "stay": "Alojamiento in situ",
+        "food": "Cocina de rendimiento",
+        "recovery": "Recuperación y sauna",
+        "setting": "Entorno de montaña",
+        "access": "A 30 min de Málaga"
+      }
+    },
+    "outcomes": {
+      "title": "Lo que te llevas",
+      "items": ["Confianza", "Técnica", "Energía", "Disciplina", "Claridad", "Forma física", "Un reset real"]
+    },
+    "holidayPreview": {
+      "title": "El Retiro de Boxeo",
+      "sub": "Cinco, siete o diez días. Boxeo, recuperación, comida real, aire de montaña.",
+      "for": "Para quién",
+      "forBody": "Viajeros que quieren algo real. Principiantes bienvenidos. También invitados en plena forma.",
+      "includes": "Qué incluye",
+      "addons": "Add-ons opcionales",
+      "addonsBody": "Transfer del aeropuerto, sesiones privadas 1:1, mejora de habitación.",
+      "cta": "Reservar plaza"
+    },
+    "founderPreview": {
+      "title": "Retiro de Founders & Ejecutivos",
+      "sub": "Por solicitud. Grupos reducidos. Para volver más afilado.",
+      "body": "Aléjate del ruido. Entrena con estructura. Come bien. Duerme profundo. Vuelve más claro, más fuerte, más sereno.",
+      "cta": "Solicitar plaza"
+    },
+    "testimonials": { "title": "Lo que dicen los invitados" },
+    "pricing": {
+      "title": "Una forma simple de entrar",
+      "sub": "Precio final según fecha y paquete. Puntos de partida indicativos abajo.",
+      "trial": "Clase de Prueba",
+      "retreat": "Retiro de Boxeo",
+      "executive": "Retiro Ejecutivo",
+      "from": "desde"
+    },
+    "location": {
+      "title": "Dónde entrenarás",
+      "sub": "En las montañas sobre La Cala de Mijas — las direcciones importan."
+    },
+    "faqPreview": { "title": "Respuestas rápidas", "all": "Ver todas las FAQs" },
+    "finalCta": {
+      "title": "Ponte los guantes.",
+      "sub": "Elige una puerta. Reserva tus fechas. Del resto nos ocupamos."
+    }
+  },
+  "footer": {
+    "tagline": "Coaching de boxeo premium, en Mike's Gym Marbella.",
+    "rights": "Todos los derechos reservados.",
+    "hostedAt": "En Mike's Gym Marbella"
+  },
+  "stickyCta": "Reservar o escribir",
+  "common": {
+    "soon": "Próximamente",
+    "placeholder": "Texto editable",
+    "loading": "Cargando…",
+    "requestDates": "Consultar disponibilidad"
+  },
+  "languages": { "en": "English", "es": "Español", "sv": "Svenska" }
+}
