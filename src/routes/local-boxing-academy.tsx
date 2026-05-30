@@ -48,6 +48,7 @@ function Page() {
           <li><strong>Group class:</strong> €15 per class</li>
           <li><strong>Private 1:1 (30 min):</strong> €30</li>
           <li><strong>Private 1:1 (1 hour):</strong> €60</li>
+          <li><strong>Monthly package:</strong> €700 for 3 one-hour 1:1 sessions per week for a month</li>
         </ul>
         <p>Monthly memberships available. Final pricing confirmed at booking.</p>
       </Section>
