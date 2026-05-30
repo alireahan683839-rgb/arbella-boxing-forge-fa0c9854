@@ -40,6 +40,7 @@ function Page() {
           <li><strong>1 hour 1:1:</strong> €60</li>
           <li><strong>30 min 1:1:</strong> €30</li>
           <li><strong>Group class:</strong> €15</li>
+          <li><strong>Monthly package:</strong> €700 for 3 one-hour 1:1 sessions per week for a month</li>
         </ul>
         <p>5-pack and 10-pack available. Deposit secures the slot.</p>
       </Section>
