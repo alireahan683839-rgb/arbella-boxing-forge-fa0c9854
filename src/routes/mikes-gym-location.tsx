@@ -24,7 +24,7 @@ function Page() {
     <PageShell
       eyebrow="The Gym"
       title="Mike's Gym Marbella"
-      intro="A working boxing gym with on-site accommodation, performance kitchen, sauna and mountain views — 30 minutes from Málaga airport."
+      intro="A working boxing gym with on-site accommodation, performance kitchen, ice bath and mountain views — 30 minutes from Málaga airport."
       heroImage={cardHoliday}
     >
       <Section title="Address">

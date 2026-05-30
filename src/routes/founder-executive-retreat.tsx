@@ -31,7 +31,7 @@ function Page() {
         <ul>
           <li>Small cohort, application-led</li>
           <li>Boxing twice daily — built around your level</li>
-          <li>Strategy windows, breathwork, sauna, mobility</li>
+          <li>Strategy windows, breathwork, ice bath, mobility</li>
           <li>Performance kitchen, no decisions on food</li>
           <li>Optional 1:1 coaching with Lodgey</li>
         </ul>
