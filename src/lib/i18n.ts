@@ -33,6 +33,21 @@ export const LANG_LABELS: Record<SupportedLang, string> = {
   hr: "Hrvatski",
 };
 
+export const LANG_FLAGS: Record<SupportedLang, string> = {
+  en: "🇬🇧",
+  es: "🇪🇸",
+  sv: "🇸🇪",
+  no: "🇳🇴",
+  da: "🇩🇰",
+  fi: "🇫🇮",
+  de: "🇩🇪",
+  fr: "🇫🇷",
+  it: "🇮🇹",
+  bs: "🇧🇦",
+  sr: "🇷🇸",
+  hr: "🇭🇷",
+};
+
 if (!i18n.isInitialized) {
   i18n
     .use(LanguageDetector)
