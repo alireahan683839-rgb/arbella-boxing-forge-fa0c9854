@@ -49,6 +49,7 @@ function Page() {
           <li><strong>Private 1:1 (30 min):</strong> €30</li>
           <li><strong>Private 1:1 (1 hour):</strong> €60</li>
           <li><strong>Monthly package:</strong> €700 for 3 one-hour 1:1 sessions per week for a month</li>
+          <li><strong>Holiday retreat:</strong> €180 per day — includes room, accommodation and 3 meals a day (extra 1:1 €60/hr · €30/30 min)</li>
         </ul>
         <p>Monthly memberships available. Final pricing confirmed at booking.</p>
       </Section>
