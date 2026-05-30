@@ -48,6 +48,26 @@ export const LANG_FLAGS: Record<SupportedLang, string> = {
   hr: "🇭🇷",
 };
 
+// ISO 3166-1 alpha-2 country code per language (for SVG flag rendering).
+export const LANG_COUNTRY: Record<SupportedLang, string> = {
+  en: "gb",
+  es: "es",
+  sv: "se",
+  no: "no",
+  da: "dk",
+  fi: "fi",
+  de: "de",
+  fr: "fr",
+  it: "it",
+  bs: "ba",
+  sr: "rs",
+  hr: "hr",
+};
+
+export function flagUrl(lang: SupportedLang, width: 40 | 80 = 40) {
+  return `https://flagcdn.com/w${width}/${LANG_COUNTRY[lang]}.png`;
+}
+
 if (!i18n.isInitialized) {
   i18n
     .use(LanguageDetector)
