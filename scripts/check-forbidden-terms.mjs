@@ -1,11 +1,26 @@
 #!/usr/bin/env node
-// Fails if any forbidden term (e.g. "sauna") appears in src/.
-// Recovery on the retreat is ice bath — never sauna. Update FORBIDDEN below
-// to add more terms over time.
+// Fails if any forbidden term appears in src/.
+// Edit scripts/forbidden-terms.json to update the list — no code changes needed.
 import { readdirSync, readFileSync, statSync } from "node:fs";
-import { join, extname } from "node:path";
+import { join, extname, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const FORBIDDEN = ["sauna"];
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const CONFIG_PATH = join(__dirname, "forbidden-terms.json");
+
+let FORBIDDEN = [];
+try {
+  const cfg = JSON.parse(readFileSync(CONFIG_PATH, "utf8"));
+  FORBIDDEN = Array.isArray(cfg.terms) ? cfg.terms.filter((t) => typeof t === "string" && t.trim()) : [];
+} catch (err) {
+  console.error(`✗ Could not read ${CONFIG_PATH}: ${err.message}`);
+  process.exit(1);
+}
+
+if (FORBIDDEN.length === 0) {
+  console.log("✓ No forbidden terms configured — skipping scan.");
+  process.exit(0);
+}
 const ROOTS = ["src"];
 const EXTS = new Set([".ts", ".tsx", ".js", ".jsx", ".json", ".md", ".css", ".html"]);
 
