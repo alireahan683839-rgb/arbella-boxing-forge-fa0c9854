@@ -5,9 +5,33 @@ import { initReactI18next } from "react-i18next";
 import en from "@/i18n/locales/en.json";
 import es from "@/i18n/locales/es.json";
 import sv from "@/i18n/locales/sv.json";
+import no from "@/i18n/locales/no.json";
+import da from "@/i18n/locales/da.json";
+import fi from "@/i18n/locales/fi.json";
+import de from "@/i18n/locales/de.json";
+import fr from "@/i18n/locales/fr.json";
+import it from "@/i18n/locales/it.json";
+import bs from "@/i18n/locales/bs.json";
+import sr from "@/i18n/locales/sr.json";
+import hr from "@/i18n/locales/hr.json";
 
-export const SUPPORTED_LANGS = ["en", "es", "sv"] as const;
+export const SUPPORTED_LANGS = ["en", "es", "sv", "no", "da", "fi", "de", "fr", "it", "bs", "sr", "hr"] as const;
 export type SupportedLang = (typeof SUPPORTED_LANGS)[number];
+
+export const LANG_LABELS: Record<SupportedLang, string> = {
+  en: "English",
+  es: "Español",
+  sv: "Svenska",
+  no: "Norsk",
+  da: "Dansk",
+  fi: "Suomi",
+  de: "Deutsch",
+  fr: "Français",
+  it: "Italiano",
+  bs: "Bosanski",
+  sr: "Srpski",
+  hr: "Hrvatski",
+};
 
 if (!i18n.isInitialized) {
   i18n
@@ -18,12 +42,22 @@ if (!i18n.isInitialized) {
         en: { translation: en },
         es: { translation: es },
         sv: { translation: sv },
+        no: { translation: no },
+        da: { translation: da },
+        fi: { translation: fi },
+        de: { translation: de },
+        fr: { translation: fr },
+        it: { translation: it },
+        bs: { translation: bs },
+        sr: { translation: sr },
+        hr: { translation: hr },
       },
+      lng: "en",
       fallbackLng: "en",
-      supportedLngs: ["en", "es", "sv"],
+      supportedLngs: [...SUPPORTED_LANGS],
       interpolation: { escapeValue: false },
       detection: {
-        order: ["localStorage", "navigator"],
+        order: ["localStorage"],
         caches: ["localStorage"],
         lookupLocalStorage: "lodgey_lang",
       },
