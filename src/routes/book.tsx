@@ -34,6 +34,12 @@ function Page() {
     holiday: "Holiday retreat (deposit)",
   };
 
+  const prices: Record<Offering, string> = {
+    trial: "€15 per class",
+    private: "€60 per hour · €30 per 30 min",
+    holiday: "€180 per day — includes room, accommodation and 3 meals a day. Extra 1:1: €60/hr · €30/30 min",
+  };
+
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSent(true);
@@ -61,7 +67,8 @@ function Page() {
                   offering === k ? "border-primary bg-primary/10 text-foreground" : "border-border text-muted-foreground hover:border-primary/50"
                 }`}
               >
-                {labels[k]}
+                <div>{labels[k]}</div>
+                <div className="text-xs text-muted-foreground mt-1">{prices[k]}</div>
               </button>
             ))}
           </div>
@@ -71,6 +78,10 @@ function Page() {
           <input required type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" className="bg-input border border-border px-4 py-3 text-foreground" />
         </div>
         <textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Dates, level, anything we should know" rows={5} className="w-full bg-input border border-border px-4 py-3 text-foreground" />
+        <div className="border border-border bg-muted/30 px-4 py-3 text-sm">
+          <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Your selection</div>
+          <div className="text-foreground"><strong>{labels[offering]}</strong> — {prices[offering]}</div>
+        </div>
         <button type="submit" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-primary text-primary-foreground text-xs uppercase tracking-widest font-medium">
           <MessageCircle className="h-4 w-4" /> Send & open WhatsApp
         </button>
