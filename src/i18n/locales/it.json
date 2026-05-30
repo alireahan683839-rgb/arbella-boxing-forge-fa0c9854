@@ -1,0 +1,134 @@
+{
+  "nav": {
+    "local": "Local Academy",
+    "holiday": "Holiday Retreat",
+    "founder": "Founder Retreat",
+    "private": "Private 1:1",
+    "coach": "The Coach",
+    "gym": "The Gym",
+    "book": "Book",
+    "apply": "Apply",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "cta": {
+    "primary": "Book your boxing experience",
+    "secondary": "Explore your path",
+    "whatsapp": "Message on WhatsApp",
+    "apply": "Apply for the retreat",
+    "trial": "Book a trial class",
+    "private": "Book private 1:1",
+    "directions": "Get directions",
+    "viewAll": "See all dates"
+  },
+  "home": {
+    "heroEyebrow": "Lodgey's Boxing · Hosted at Mike's Gym Marbella",
+    "heroTitle": "Train. Reset. Come back sharper.",
+    "heroSubtitle": "Premium boxing coaching in the mountains above Marbella — for locals, for travellers and for the founders who need a real reset.",
+    "trust": {
+      "hosted": "Hosted at Mike's Gym Marbella",
+      "levels": "All levels welcome",
+      "coaching": "Coach-led, not class-led",
+      "premium": "Premium environment"
+    },
+    "paths": {
+      "title": "Choose your path",
+      "sub": "Three doors in. One standard.",
+      "local": {
+        "title": "Local Boxing Academy",
+        "for": "For locals — kids, teens, adults and competitors.",
+        "what": "Weekly group classes, structured by level, in a real boxing gym.",
+        "next": "Book a trial class"
+      },
+      "holiday": {
+        "title": "Boxing Holiday Retreat",
+        "for": "For travellers who want 5, 7 or 10 days that actually change something.",
+        "what": "Twice-daily training, recovery, real food, accommodation on-site.",
+        "next": "Reserve your dates"
+      },
+      "founder": {
+        "title": "Founder & Executive Retreat",
+        "for": "For founders, leaders and small executive teams.",
+        "what": "Application-led. Small groups. Built around clarity, energy and discipline.",
+        "next": "Apply now"
+      }
+    },
+    "authority": {
+      "title": "Real coaching. Built on structure.",
+      "sub": "Not a class with a punching bag. A programme designed by someone who has spent a life in the sport.",
+      "verifiedNote": "Credentials marked unverified are placeholders. Final titles and logos will be added once verified."
+    },
+    "different": {
+      "title": "Why this isn't just another gym session",
+      "items": {
+        "env": { "title": "The environment", "body": "A serious boxing gym in the hills above Marbella — built to train in, not to scroll in." },
+        "coach": { "title": "The coaching", "body": "Real progression. Real corrections. Real respect for the sport." },
+        "transform": { "title": "The transformation", "body": "You arrive curious. You leave moving, eating and sleeping differently." },
+        "scope": { "title": "Scalable for every level", "body": "First class to fight prep. The standard stays. The programme adapts." }
+      }
+    },
+    "gym": {
+      "title": "Why Mike's Gym Marbella",
+      "body": "A working boxing gym with accommodation, recovery and real food, in a mountain setting 30 minutes from Málaga airport.",
+      "items": {
+        "gym": "Full boxing gym",
+        "stay": "On-site accommodation",
+        "food": "Performance kitchen",
+        "recovery": "Recovery & sauna",
+        "setting": "Mountain setting",
+        "access": "30 min from Málaga"
+      }
+    },
+    "outcomes": {
+      "title": "What you take home",
+      "items": ["Confidence", "Skill", "Energy", "Discipline", "Clarity", "Fitness", "A real reset"]
+    },
+    "holidayPreview": {
+      "title": "The Holiday Retreat",
+      "sub": "Five, seven or ten days. Boxing, recovery, real food, mountain air.",
+      "for": "Who it's for",
+      "forBody": "Travellers who want something real. Beginners welcome. Fight-fit guests welcomed too.",
+      "includes": "What's included",
+      "addons": "Optional add-ons",
+      "addonsBody": "Airport transfer, private 1:1 sessions, room upgrades.",
+      "cta": "Reserve a place"
+    },
+    "founderPreview": {
+      "title": "Founder & Executive Retreat",
+      "sub": "Application only. Small groups. Built to bring you back sharper.",
+      "body": "Step away from the noise. Train with structure. Eat properly. Sleep deeply. Come back clearer, stronger, calmer.",
+      "cta": "Apply for the retreat"
+    },
+    "testimonials": { "title": "What guests say" },
+    "pricing": {
+      "title": "A simple way in",
+      "sub": "Final pricing per date and package. Indicative starting points below.",
+      "trial": "Trial Class",
+      "retreat": "Holiday Retreat",
+      "executive": "Executive Retreat",
+      "from": "from"
+    },
+    "location": {
+      "title": "Where you'll train",
+      "sub": "In the hills above La Cala de Mijas — directions matter."
+    },
+    "faqPreview": { "title": "Quick answers", "all": "See all FAQs" },
+    "finalCta": {
+      "title": "Glove up.",
+      "sub": "Pick a door. Book your dates. The rest is on us."
+    }
+  },
+  "footer": {
+    "tagline": "Premium boxing coaching, hosted at Mike's Gym Marbella.",
+    "rights": "All rights reserved.",
+    "hostedAt": "Hosted at Mike's Gym Marbella"
+  },
+  "stickyCta": "Book or message",
+  "common": {
+    "soon": "Coming soon",
+    "placeholder": "Editable placeholder",
+    "loading": "Loading…",
+    "requestDates": "Request availability"
+  },
+  "languages": { "en": "English", "es": "Español", "sv": "Svenska" }
+}
