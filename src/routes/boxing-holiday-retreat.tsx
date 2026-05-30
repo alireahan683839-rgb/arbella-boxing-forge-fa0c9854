@@ -32,7 +32,7 @@ function Page() {
           <li>Twice-daily boxing sessions (technique AM, conditioning / pads PM)</li>
           <li>On-site accommodation at Mike's Gym</li>
           <li>Performance kitchen — proper food, three times a day</li>
-          <li>Recovery: sauna, mobility, rest</li>
+          <li>Recovery: ice bath, mobility, rest</li>
           <li>One private 1:1 with Coach Lodgey</li>
         </ul>
       </Section>
