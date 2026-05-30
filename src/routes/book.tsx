@@ -27,6 +27,14 @@ function Page() {
   const [email, setEmail] = useState("");
   const [notes, setNotes] = useState("");
   const [sent, setSent] = useState(false);
+  const [receipt, setReceipt] = useState<{
+    ref: string;
+    when: string;
+    offering: Offering;
+    name: string;
+    email: string;
+    notes: string;
+  } | null>(null);
 
   const labels: Record<Offering, string> = {
     trial: "Trial class",
@@ -43,12 +51,86 @@ function Page() {
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSent(true);
+    const ref = `LB-${Date.now().toString(36).toUpperCase()}`;
+    setReceipt({
+      ref,
+      when: new Date().toLocaleString("sv-SE"),
+      offering,
+      name,
+      email,
+      notes,
+    });
     const msg = `Booking request — ${labels[offering]}\nName: ${name}\nEmail: ${email}\nNotes: ${notes}`;
     window.open(whatsappLink(msg), "_blank");
   };
 
   return (
     <PageShell eyebrow="Book" title="Book your session" intro="Local classes and private sessions are booked directly. Holiday retreats secure your dates with a deposit.">
+      {receipt && (
+        <div className="mb-8 border border-primary/40 bg-primary/5 p-6">
+          <div className="flex items-center justify-between gap-4 mb-4">
+            <div>
+              <p className="text-xs uppercase tracking-[0.3em] text-primary">Booking receipt</p>
+              <h2 className="font-display text-2xl md:text-3xl mt-1">Request received</h2>
+            </div>
+            <div className="text-right text-xs text-muted-foreground">
+              <div>Ref: <span className="text-foreground font-mono">{receipt.ref}</span></div>
+              <div>{receipt.when}</div>
+            </div>
+          </div>
+          <dl className="grid sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+            <div>
+              <dt className="text-xs uppercase tracking-widest text-muted-foreground">Offering</dt>
+              <dd className="text-foreground">{labels[receipt.offering]}</dd>
+            </div>
+            <div>
+              <dt className="text-xs uppercase tracking-widest text-muted-foreground">Price</dt>
+              <dd className="text-foreground font-medium">{prices[receipt.offering]}</dd>
+            </div>
+            <div>
+              <dt className="text-xs uppercase tracking-widest text-muted-foreground">Name</dt>
+              <dd className="text-foreground">{receipt.name}</dd>
+            </div>
+            <div>
+              <dt className="text-xs uppercase tracking-widest text-muted-foreground">Email</dt>
+              <dd className="text-foreground break-all">{receipt.email}</dd>
+            </div>
+            {receipt.notes && (
+              <div className="sm:col-span-2">
+                <dt className="text-xs uppercase tracking-widest text-muted-foreground">Notes</dt>
+                <dd className="text-foreground whitespace-pre-wrap">{receipt.notes}</dd>
+              </div>
+            )}
+          </dl>
+          <div className="mt-5 pt-4 border-t border-border/60 text-xs text-muted-foreground space-y-1">
+            <p><strong className="text-foreground">Pricing reference</strong></p>
+            <p>Holiday retreat: <span className="text-foreground">€180/day</span> — room, accommodation & 3 meals/day.</p>
+            <p>Extra 1:1 coaching: <span className="text-foreground">€60/hour</span> · <span className="text-foreground">€30/30 min</span>.</p>
+          </div>
+          <div className="mt-5 flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => window.print()}
+              className="px-5 py-3 border border-border text-xs uppercase tracking-widest hover:border-primary hover:text-primary transition-colors"
+            >
+              Print / save PDF
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setReceipt(null);
+                setSent(false);
+                setName("");
+                setEmail("");
+                setNotes("");
+              }}
+              className="px-5 py-3 border border-border text-xs uppercase tracking-widest hover:border-primary hover:text-primary transition-colors"
+            >
+              New booking
+            </button>
+          </div>
+        </div>
+      )}
       <ul className="text-sm text-muted-foreground space-y-1 mb-2">
         <li><strong className="text-foreground">Trial / group class:</strong> €15</li>
         <li><strong className="text-foreground">Private 1:1:</strong> €60 per hour · €30 per 30 min</li>
