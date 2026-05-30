@@ -38,16 +38,17 @@ function Page() {
       </Section>
       <Section title="Lengths & pricing">
         <ul>
+          <li><strong>€180 per day</strong> — includes room, accommodation and 3 meals a day</li>
           <li><strong>5 days</strong> — short reset</li>
           <li><strong>7 days</strong> — the classic</li>
           <li><strong>10 days</strong> — full transformation</li>
         </ul>
-        <p>Indicative deposit secures your dates. Final pricing confirmed before payment.</p>
+        <p>Extra 1:1 coaching: €60 per hour or €30 per half hour. Deposit secures your dates. Final pricing confirmed before payment.</p>
       </Section>
       <Section title="Add-ons">
         <ul>
           <li>Airport transfer from Málaga (AGP)</li>
-          <li>Additional private 1:1 sessions</li>
+          <li>Additional private 1:1 sessions (€60/hr · €30/30 min)</li>
           <li>Room upgrade</li>
         </ul>
       </Section>
