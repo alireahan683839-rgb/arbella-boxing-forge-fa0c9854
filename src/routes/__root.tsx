@@ -11,11 +11,15 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import "@fontsource/bebas-neue/400.css";
+import "@fontsource/archivo-black/400.css";
+import "@fontsource/hind/300.css";
+import "@fontsource/hind/400.css";
+import "@fontsource/hind/500.css";
+import "@fontsource/hind/600.css";
+import "@fontsource/hind/700.css";
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
-import "@fontsource/inter/700.css";
 import "@/lib/i18n";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -86,19 +90,41 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { name: "theme-color", content: "#0a0a0f" },
+      { name: "author", content: "Lodgey's Boxing @ Mike's Gym Marbella" },
+      { property: "og:site_name", content: "Lodgey's Boxing @ Mike's Gym Marbella" },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { property: "og:locale", content: "en_US" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://lodgeysboxing.com/#business",
+          name: "Lodgey's Boxing @ Mike's Gym Marbella",
+          description: "Premium boxing coaching, local classes and 5–10 day boxing retreats hosted at Mike's Gym Marbella.",
+          image: "/og-cover.jpg",
+          telephone: "+34600000000",
+          priceRange: "€€€",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "La Majadilla del Muerto 210",
+            addressLocality: "Las Lagunas de Mijas",
+            postalCode: "29649",
+            addressCountry: "ES",
+          },
+          geo: { "@type": "GeoCoordinates", latitude: 36.5908, longitude: -4.6649 },
+          areaServed: ["Marbella", "La Cala de Mijas", "Mijas", "Málaga"],
+        }),
       },
     ],
   }),
