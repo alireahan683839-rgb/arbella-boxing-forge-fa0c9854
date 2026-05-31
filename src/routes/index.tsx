@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import { ArrowRight, MessageCircle, Check, Quote } from "lucide-react";
+import { ArrowRight, MessageCircle, Check, Quote, MapPin } from "lucide-react";
 import heroAction from "@/assets/coach-action.jpg";
 import heroProfile from "@/assets/coach-profile.jpg";
 import cardLocal from "@/assets/card-local.jpg";
@@ -210,8 +210,8 @@ function Index() {
         <img src={cardFounder} alt="" aria-hidden className="absolute inset-0 w-full h-full object-cover opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/40" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">04 — Founders</p>
-          <h2 className="font-display text-4xl md:text-7xl leading-[0.95] max-w-3xl mb-6">
+          <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">04 — Business Retreat</p>
+          <h2 className="font-display text-4xl md:text-7xl leading-[0.95] max-w-4xl mb-6">
             {t("home.founderPreview.title")}
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mb-8">{t("home.founderPreview.body")}</p>
@@ -221,6 +221,112 @@ function Index() {
           >
             {t("home.founderPreview.cta")} <ArrowRight className="h-4 w-4" />
           </Link>
+        </div>
+      </section>
+
+      {/* PRIVATE 1:1 PREMIUM */}
+      <section className="py-24 md:py-32 border-t border-border/50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+          <div className="aspect-[4/5] overflow-hidden border border-border order-2 lg:order-1">
+            <img src={heroProfile} alt="Mark Lodge — privat 1:1 coaching" className="w-full h-full object-cover" />
+          </div>
+          <div className="order-1 lg:order-2">
+            <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">05 — {t("home.private.eyebrow")}</p>
+            <h2 className="font-display text-4xl md:text-6xl leading-[0.95] mb-6">{t("home.private.title")}</h2>
+            <p className="text-muted-foreground text-lg mb-8 text-pretty">{t("home.private.body")}</p>
+            <ul className="grid grid-cols-2 gap-3 mb-8 text-sm">
+              <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> Nybörjare till elit</li>
+              <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> €60/timme</li>
+              <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> €30/30 min</li>
+              <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> Termin €700/månad</li>
+            </ul>
+            <Link to="/private-coaching" className="inline-flex items-center gap-2 px-7 py-4 bg-primary text-primary-foreground text-xs uppercase tracking-widest font-medium">
+              {t("home.private.cta")} <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIALS */}
+      <section className="py-24 md:py-32 border-t border-border/50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">06 — Röster</p>
+          <h2 className="font-display text-4xl md:text-6xl leading-none mb-14">{t("home.testimonials.title")}</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {testimonials.map((tst, i) => (
+              <figure key={i} className="border border-border bg-surface p-8 flex flex-col gap-6">
+                <Quote className="h-6 w-6 text-primary" />
+                <blockquote className="text-base md:text-lg text-foreground/90 leading-relaxed flex-1">"{tst.quote}"</blockquote>
+                <figcaption className="text-xs uppercase tracking-widest text-muted-foreground">
+                  <span className="text-foreground">{tst.name}</span> · {tst.role}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* BOOKING TEASER */}
+      <section className="py-24 md:py-32 border-t border-border/50 relative overflow-hidden">
+        <img src={cardLocal} alt="" aria-hidden className="absolute inset-0 w-full h-full object-cover opacity-15" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background to-background/60" />
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">07 — Boka</p>
+            <h2 className="font-display text-4xl md:text-6xl leading-[0.95] mb-6">RIKTIG BOXNING. RIKTIG COACHING. RIKTIG FÖRÄNDRING.</h2>
+            <p className="text-muted-foreground text-lg mb-8 max-w-xl">Välj ditt upplägg och skicka din förfrågan på under en minut.</p>
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            <Link to="/book" className="border border-border bg-background/80 backdrop-blur p-5 hover:border-primary transition-colors">
+              <p className="font-display text-xl">Prova-på</p>
+              <p className="text-xs text-muted-foreground mt-1">€15 / klass</p>
+            </Link>
+            <Link to="/book" className="border border-border bg-background/80 backdrop-blur p-5 hover:border-primary transition-colors">
+              <p className="font-display text-xl">Holiday Camp</p>
+              <p className="text-xs text-muted-foreground mt-1">från €180 / dag</p>
+            </Link>
+            <Link to="/book" className="border border-border bg-background/80 backdrop-blur p-5 hover:border-primary transition-colors">
+              <p className="font-display text-xl">Business</p>
+              <p className="text-xs text-muted-foreground mt-1">Strategisamtal</p>
+            </Link>
+            <Link to="/book" className="border border-primary bg-primary/10 backdrop-blur p-5 hover:bg-primary/20 transition-colors">
+              <p className="font-display text-xl text-primary">1:1</p>
+              <p className="text-xs text-muted-foreground mt-1">€60 / timme</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* MAP */}
+      <section className="py-24 md:py-32 border-t border-border/50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">08 — Platsen</p>
+          <h2 className="font-display text-4xl md:text-6xl leading-none mb-10">HÄR TRÄNAR DU</h2>
+          <MapEmbed />
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 md:py-32 border-t border-border/50">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">09 — FAQ</p>
+          <h2 className="font-display text-4xl md:text-6xl leading-none mb-12">VANLIGA FRÅGOR</h2>
+          <div className="divide-y divide-border border-y border-border">
+            {faqs.map((f, i) => (
+              <details key={i} className="group py-5">
+                <summary className="flex items-center justify-between gap-4 cursor-pointer list-none">
+                  <h3 className="font-display text-xl md:text-2xl leading-tight">{f.q}</h3>
+                  <span className="text-primary font-display text-2xl shrink-0 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="mt-3 text-muted-foreground leading-relaxed">{f.a}</p>
+              </details>
+            ))}
+          </div>
+          <div className="mt-10">
+            <Link to="/faq" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-primary hover:underline">
+              {t("home.faqPreview.all")} <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
         </div>
       </section>
 
