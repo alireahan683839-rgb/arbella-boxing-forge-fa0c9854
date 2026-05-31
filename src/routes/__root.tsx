@@ -4,13 +4,10 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
-  HeadContent,
-  Scripts,
 } from "@tanstack/react-router";
-import { useEffect, type ReactNode } from "react";
+import { useEffect } from "react";
 
-import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
+import "../styles.css";
 import "@fontsource/archivo-black/400.css";
 import "@fontsource/hind/300.css";
 import "@fontsource/hind/400.css";
@@ -50,9 +47,6 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
-  useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
-  }, [error]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -86,67 +80,10 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "theme-color", content: "#0a0a0f" },
-      { name: "author", content: "Lodgey's Boxing @ Mike's Gym Marbella" },
-      { property: "og:site_name", content: "Lodgey's Boxing @ Mike's Gym Marbella" },
-      { property: "og:type", content: "website" },
-      { property: "og:locale", content: "en_US" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-    links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-    ],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "@id": "https://lodgeysboxing.com/#business",
-          name: "Lodgey's Boxing @ Mike's Gym Marbella",
-          description: "Premium boxing coaching, local classes and 5–10 day boxing retreats hosted at Mike's Gym Marbella.",
-          image: "/og-cover.jpg",
-          telephone: "+34600000000",
-          priceRange: "€€€",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "La Majadilla del Muerto 210",
-            addressLocality: "Las Lagunas de Mijas",
-            postalCode: "29649",
-            addressCountry: "ES",
-          },
-          geo: { "@type": "GeoCoordinates", latitude: 36.5908, longitude: -4.6649 },
-          areaServed: ["Marbella", "La Cala de Mijas", "Mijas", "Málaga"],
-        }),
-      },
-    ],
-  }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
 });
-
-function RootShell({ children }: { children: ReactNode }) {
-  return (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
