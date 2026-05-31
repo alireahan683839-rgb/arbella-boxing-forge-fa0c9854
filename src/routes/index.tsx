@@ -6,6 +6,7 @@ import cardLocal from "@/assets/card-local.jpg";
 import cardHoliday from "@/assets/card-holiday.jpg";
 import cardFounder from "@/assets/card-founder.jpg";
 import heroBoxer from "@/assets/hero-boxer.jpg";
+import heroVideo from "@/assets/hero-fightcamp.mp4.asset.json";
 import { BRAND, whatsappLink } from "@/lib/brand";
 import { useReveal, useCountUp } from "@/hooks/use-reveal";
 
@@ -142,9 +143,20 @@ function Index() {
    HERO
 ============================================================ */
 function Hero() {
+  // Detect mobile / reduced data to skip video entirely
+  const [showVideo, setShowVideo] = React.useState(false);
+  React.useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mql = window.matchMedia("(min-width: 768px)");
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const conn = (navigator as any).connection;
+    const slow = conn && (conn.saveData || /2g|3g/.test(conn.effectiveType || ""));
+    if (mql.matches && !reduced.matches && !slow) setShowVideo(true);
+  }, []);
+
   return (
     <section className="relative min-h-[100svh] flex items-end overflow-hidden">
-      {/* Background image (acts as poster — could be swapped for <video> later) */}
+      {/* Poster image — always rendered as instant LCP + mobile fallback */}
       <img
         src={heroAction}
         alt="Champion coach Mark Lodge training a boxer at Mike's Gym Marbella"
@@ -152,6 +164,20 @@ function Hero() {
         loading="eager"
         fetchPriority="high"
       />
+      {/* Cinematic fight-camp video — desktop only, fades in over the poster */}
+      {showVideo && (
+        <video
+          src={heroVideo.url}
+          poster={heroAction}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-hidden
+          className="absolute inset-0 w-full h-full object-cover object-center animate-fade-in"
+        />
+      )}
       {/* Cinematic overlays */}
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/30" />
       <div className="absolute inset-0 light-leak opacity-90" />
