@@ -1,20 +1,21 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import { ArrowRight, MapPin, MessageCircle, Check } from "lucide-react";
+import { ArrowRight, MessageCircle, Check, Quote } from "lucide-react";
 import heroAction from "@/assets/coach-action.jpg";
 import heroProfile from "@/assets/coach-profile.jpg";
 import cardLocal from "@/assets/card-local.jpg";
 import cardHoliday from "@/assets/card-holiday.jpg";
 import cardFounder from "@/assets/card-founder.jpg";
 import { BRAND, whatsappLink } from "@/lib/brand";
+import { MapEmbed } from "@/components/site/MapEmbed";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Lodgey's Boxing @ Mike's Gym Marbella — Premium boxing coaching" },
-      { name: "description", content: "Premium boxing coaching in the mountains above Marbella. Local academy, holiday retreats and founder retreats — hosted at Mike's Gym." },
-      { property: "og:title", content: "Lodgey's Boxing @ Mike's Gym Marbella" },
-      { property: "og:description", content: "Train. Reset. Come back sharper. Boxing retreats and coaching, hosted at Mike's Gym Marbella." },
+      { title: "Mark Lodge Boxing — Premium boxningscoaching på Mike's Gym Marbella" },
+      { name: "description", content: "Riktig boxningscoaching i bergen ovanför Marbella. Lokala klasser, Holiday Boxing Camp, Business Retreat och 1:1 coaching — på Mike's Gym Marbella." },
+      { property: "og:title", content: "Mark Lodge Boxing @ Mike's Gym Marbella" },
+      { property: "og:description", content: "Träna som en fighter. Kom hem som en ny människa. Premium boxning på Costa del Sol." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
     ],
@@ -33,6 +34,19 @@ function Index() {
   ];
 
   const outcomes = t("home.outcomes.items", { returnObjects: true }) as string[];
+  const testimonials = t("home.testimonials.items", { returnObjects: true }) as Array<{
+    quote: string;
+    name: string;
+    role: string;
+  }>;
+
+  const faqs = [
+    { q: "Måste jag kunna boxas innan?", a: "Nej. Nybörjare är välkomna och de flesta börjar där. Vi möter dig på din nivå." },
+    { q: "Är sparring obligatoriskt?", a: "Aldrig. Sparring är frivilligt och bygger på samtycke. Du kan träna i åratal utan att sparra en gång." },
+    { q: "Vad ingår i Holiday Camp?", a: "Två pass om dagen, boende på plats, performance-kök, återhämtning (isbad + mobilitet) och ett privat 1:1-pass." },
+    { q: "Vad kostar Holiday Camp?", a: "€180 per dag — inkluderar rum, boende och 3 mål mat. Extra 1:1 coaching är €60/timme eller €30 per 30 min." },
+    { q: "Hur funkar Business Retreat?", a: "Vi börjar med ett strategisamtal, skräddarsyr upplägget för ditt team (5, 10 eller 15+ personer) och skickar offert." }
+  ];
 
   return (
     <div className="bg-background text-foreground">
