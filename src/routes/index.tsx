@@ -180,8 +180,10 @@ function Hero() {
         />
       )}
       {/* Cinematic overlays */}
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/30" />
-      <div className="absolute inset-0 light-leak opacity-90" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/85 to-background/40" />
+      {/* Top header readability scrim */}
+      <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/80 via-black/40 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 light-leak opacity-70" />
       <div className="absolute inset-0 grain" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-20 md:pb-28 w-full">

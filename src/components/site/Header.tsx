@@ -30,18 +30,18 @@ export function Header() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all ${
         scrolled
-          ? "bg-background/80 backdrop-blur-xl border-b border-border/60"
-          : "bg-transparent"
+          ? "bg-background/90 backdrop-blur-xl border-b border-border/70 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.6)]"
+          : "bg-gradient-to-b from-black/70 via-black/40 to-transparent backdrop-blur-md"
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between gap-4">
+        <div className="flex h-16 md:h-18 items-center justify-between gap-4">
           <Link to="/" className="flex items-center gap-2 group">
-            <span className="font-display text-xl tracking-wider leading-none">
+            <span className="font-display text-xl tracking-wider leading-none text-white">
               {BRAND.short}
               <span className="text-primary">.</span>
             </span>
-            <span className="hidden md:inline text-[10px] uppercase tracking-[0.2em] text-muted-foreground leading-none">
+            <span className="hidden md:inline text-[10px] uppercase tracking-[0.2em] text-white/70 leading-none">
               @ Mike's Gym Marbella
             </span>
           </Link>
@@ -51,8 +51,8 @@ export function Header() {
               <Link
                 key={item.to}
                 to={item.to}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider"
-                activeProps={{ className: "text-foreground" }}
+                className="text-[13px] text-white/85 hover:text-white transition-colors uppercase tracking-[0.18em] font-medium relative after:absolute after:left-0 after:right-0 after:-bottom-1.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+                activeProps={{ className: "text-white after:scale-x-100" }}
               >
                 {t(item.key)}
               </Link>
@@ -65,20 +65,20 @@ export function Header() {
               href={whatsappLink("Hi! I'd like to know more about Lodgey's Boxing.")}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:inline-flex items-center gap-2 text-xs uppercase tracking-widest text-foreground hover:text-primary transition-colors"
+              className="hidden md:inline-flex items-center gap-2 text-xs uppercase tracking-widest text-white/85 hover:text-primary transition-colors"
             >
               <MessageCircle className="h-4 w-4" />
               WhatsApp
             </a>
             <Link
               to="/book"
-              className="hidden md:inline-flex items-center px-4 py-2 bg-primary text-primary-foreground text-xs uppercase tracking-widest font-medium hover:opacity-90 transition-opacity"
+              className="hidden md:inline-flex items-center px-5 py-2.5 bg-primary text-primary-foreground text-xs uppercase tracking-[0.18em] font-semibold hover:bg-primary/90 hover:shadow-[0_8px_24px_-6px_rgba(220,38,38,0.55)] transition-all"
             >
               {t("nav.book")}
             </Link>
             <button
               type="button"
-              className="lg:hidden text-foreground p-2 -mr-2"
+              className="lg:hidden text-white p-2 -mr-2"
               onClick={() => setOpen((v) => !v)}
               aria-label="Menu"
             >
@@ -89,14 +89,14 @@ export function Header() {
       </div>
 
       {open && (
-        <div className="lg:hidden border-t border-border/60 bg-background/95 backdrop-blur-xl">
+        <div className="lg:hidden border-t border-border/60 bg-background/98 backdrop-blur-xl">
           <div className="px-4 py-6 space-y-1">
             {navItems.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
                 onClick={() => setOpen(false)}
-                className="block py-3 text-base uppercase tracking-wider text-foreground hover:text-primary"
+                className="block py-3 text-base uppercase tracking-wider text-foreground hover:text-primary border-b border-border/40"
               >
                 {t(item.key)}
               </Link>
@@ -104,14 +104,14 @@ export function Header() {
             <Link
               to="/book"
               onClick={() => setOpen(false)}
-              className="block mt-4 py-3 bg-primary text-primary-foreground text-center uppercase tracking-widest text-sm"
+              className="block mt-4 py-3.5 bg-primary text-primary-foreground text-center uppercase tracking-widest text-sm font-semibold"
             >
               {t("nav.book")}
             </Link>
             <Link
               to="/apply"
               onClick={() => setOpen(false)}
-              className="block py-3 border border-border text-center uppercase tracking-widest text-sm mt-2"
+              className="block py-3 border border-white/30 text-center uppercase tracking-widest text-sm mt-2 text-white"
             >
               {t("nav.apply")}
             </Link>
