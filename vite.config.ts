@@ -12,4 +12,7 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Force Nitro to run outside Lovable's environment (e.g. Vercel CI).
+  // NITRO_PRESET env var in vercel.json selects the vercel deployment target.
+  nitro: true,
 });
