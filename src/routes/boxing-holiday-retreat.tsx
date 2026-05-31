@@ -5,10 +5,10 @@ import cardHoliday from "@/assets/card-holiday.jpg";
 export const Route = createFileRoute("/boxing-holiday-retreat")({
   head: () => ({
     meta: [
-      { title: "Boxing Holiday Retreat — Marbella | Lodgey's Boxing" },
-      { name: "description", content: "5, 7 or 10-day boxing retreats at Mike's Gym Marbella. Twice-daily training, recovery, real food, on-site accommodation." },
-      { property: "og:title", content: "Boxing Holiday Retreat — Marbella" },
-      { property: "og:description", content: "Train, recover and reset in the hills above Marbella. 5, 7 or 10-day boxing holidays." },
+      { title: "Boxing Holiday Retreat Spain | 5–10 Day Camp in Marbella" },
+      { name: "description", content: "Escape to Marbella for a premium boxing holiday retreat. Train, eat, sleep and reset at Mike's Gym Marbella with coaching adapted to your level." },
+      { property: "og:title", content: "Boxing Holiday Retreat Spain | 5–10 Day Camp in Marbella" },
+      { property: "og:description", content: "5, 7 or 10-day boxing retreats — twice-daily training, accommodation, performance kitchen, recovery. Hosted at Mike's Gym Marbella." },
       { property: "og:url", content: "/boxing-holiday-retreat" },
       { property: "og:image", content: cardHoliday },
     ],

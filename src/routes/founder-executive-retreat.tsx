@@ -5,10 +5,10 @@ import cardFounder from "@/assets/card-founder.jpg";
 export const Route = createFileRoute("/founder-executive-retreat")({
   head: () => ({
     meta: [
-      { title: "Founder & Executive Boxing Retreat — Lodgey's Boxing Marbella" },
-      { name: "description", content: "Application-only boxing retreat for founders, leaders and executive teams. Train, reset, return sharper. Small groups in Marbella." },
-      { property: "og:title", content: "Founder & Executive Retreat — Lodgey's Boxing" },
-      { property: "og:description", content: "Application-only. Small groups. Built around clarity, energy and discipline." },
+      { title: "Executive Boxing Retreat Marbella | Founder Performance Reset" },
+      { name: "description", content: "A premium boxing retreat for founders, entrepreneurs and teams who want to reset energy, sharpen focus and return stronger from Marbella." },
+      { property: "og:title", content: "Executive Boxing Retreat Marbella | Founder Performance Reset" },
+      { property: "og:description", content: "Application-only boxing retreat for founders, leaders and executive teams. Hosted at Mike's Gym Marbella." },
       { property: "og:url", content: "/founder-executive-retreat" },
       { property: "og:image", content: cardFounder },
     ],
