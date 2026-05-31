@@ -62,7 +62,7 @@ export function Header() {
           <div className="flex items-center gap-3">
             <LanguageSwitcher className="hidden md:flex" />
             <a
-              href={whatsappLink("Hi! I'd like to know more about Lodgey's Boxing.")}
+              href={whatsappLink("Hej! Jag vill veta mer om Mark Lodge Boxing.")}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:inline-flex items-center gap-2 text-xs uppercase tracking-widest text-foreground hover:text-primary transition-colors"
