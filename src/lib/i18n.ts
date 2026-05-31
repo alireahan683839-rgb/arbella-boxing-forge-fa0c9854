@@ -87,8 +87,8 @@ if (!i18n.isInitialized) {
         sr: { translation: sr },
         hr: { translation: hr },
       },
-      lng: "en",
-      fallbackLng: "en",
+      lng: "sv",
+      fallbackLng: "sv",
       supportedLngs: [...SUPPORTED_LANGS],
       interpolation: { escapeValue: false },
       detection: {

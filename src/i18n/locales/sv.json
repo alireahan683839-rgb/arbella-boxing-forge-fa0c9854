@@ -1,75 +1,75 @@
 {
   "nav": {
-    "local": "Lokal Akademi",
-    "holiday": "Boxningsretreat",
-    "founder": "Founder Retreat",
+    "local": "Lokala klasser",
+    "holiday": "Holiday Camp",
+    "founder": "Business Retreat",
     "private": "Privat 1:1",
-    "coach": "Coachen",
-    "gym": "Gymet",
-    "book": "Boka",
+    "coach": "Om Mark",
+    "gym": "Mike's Gym",
+    "book": "Boka nu",
     "apply": "Ansök",
     "faq": "FAQ",
     "contact": "Kontakt"
   },
   "cta": {
-    "primary": "Boka din boxningsupplevelse",
-    "secondary": "Utforska din väg",
+    "primary": "Boka nu",
+    "secondary": "Se våra upplägg",
     "whatsapp": "Skriv på WhatsApp",
-    "apply": "Ansök till retreaten",
-    "trial": "Boka prova på-pass",
+    "apply": "Boka strategisamtal",
+    "trial": "Boka prova-på-pass",
     "private": "Boka privat 1:1",
     "directions": "Hitta hit",
     "viewAll": "Se alla datum"
   },
   "home": {
-    "heroEyebrow": "Lodgey's Boxing · På Mike's Gym Marbella",
-    "heroTitle": "Träna. Resetta. Kom tillbaka skarpare.",
-    "heroSubtitle": "Premium boxningscoaching i bergen ovanför Marbella — för lokalbor, resenärer och founders som behöver ett riktigt reset.",
+    "heroEyebrow": "Mark Lodge Boxing · På Mike's Gym Marbella",
+    "heroTitle": "TRÄNA SOM EN FIGHTER. KOM HEM SOM EN NY MÄNNISKA.",
+    "heroSubtitle": "Riktig boxningscoaching i en unik bergsmiljö på Costa del Sol — för lokala klasser, privata klienter och premiumretreater.",
     "trust": {
       "hosted": "På Mike's Gym Marbella",
       "levels": "Alla nivåer välkomna",
-      "coaching": "Coach-ledd, inte klass-ledd",
-      "premium": "Premium-miljö"
+      "coaching": "Coach-ledd träning",
+      "premium": "Premiumupplevelse"
     },
     "paths": {
-      "title": "Välj din väg",
-      "sub": "Tre dörrar. En standard.",
+      "title": "VÄLJ DIN VÄG",
+      "sub": "Tre upplägg. En standard.",
       "local": {
-        "title": "Lokal Boxningsakademi",
-        "for": "För lokalbor — barn, tonåringar, vuxna och tävlande.",
-        "what": "Veckovisa gruppass, indelade efter nivå, i ett riktigt boxningsgym.",
-        "next": "Boka prova på-pass"
+        "title": "Lokala klasser",
+        "for": "Barn, ungdomar, vuxna, motionärer och tävlingsgrupp.",
+        "what": "Veckovisa gruppass, indelade efter nivå — i ett riktigt boxningsgym i La Cala de Mijas.",
+        "next": "Boka prova-på-pass"
       },
       "holiday": {
-        "title": "Boxningsretreat",
-        "for": "För dig som vill ha 5, 7 eller 10 dagar som faktiskt förändrar något.",
-        "what": "Två träningar om dagen, återhämtning, riktig mat, boende på plats.",
+        "title": "Holiday Boxing Camp",
+        "for": "5–10 dagar för dig som vill träna, äta, sova, återhämta dig och komma hem starkare.",
+        "what": "Två pass om dagen, boende på plats, performance-mat, recovery och bergsluft.",
         "next": "Reservera dina datum"
       },
       "founder": {
-        "title": "Founder & Executive Retreat",
-        "for": "För grundare, ledare och små exekutiva team.",
-        "what": "Ansökningsbaserat. Små grupper. Klarhet, energi och disciplin.",
-        "next": "Ansök nu"
+        "title": "Business Boxing Retreat",
+        "for": "För founders, ledare och team som vill göra en träningsresa med riktigt fokus.",
+        "what": "Skräddarsytt upplägg för 5, 10 eller 15+ personer. Energi, fokus, sammanhållning.",
+        "next": "Boka strategisamtal"
       }
     },
     "authority": {
       "title": "Riktig coaching. Byggd på struktur.",
-      "sub": "Inte ett klasspass med en säck. Ett program designat av någon som lever sporten.",
+      "sub": "Inte ett gympass med en säck. Ett program byggt av någon som lever sporten.",
       "verifiedNote": "Meriter markerade som overifierade är platshållare. Slutliga titlar och logotyper läggs in när de är verifierade."
     },
     "different": {
-      "title": "Varför det inte är ett vanligt gympass",
+      "title": "Varför det här inte är ett vanligt gympass",
       "items": {
-        "env": { "title": "Miljön", "body": "Ett seriöst boxningsgym i bergen ovanför Marbella — byggt för att tränas i, inte scrollas i." },
+        "env": { "title": "Miljön", "body": "Ett riktigt boxningsgym i bergen ovanför Marbella — byggt för att tränas i, inte scrollas i." },
         "coach": { "title": "Coachingen", "body": "Riktig progression. Riktiga korrigeringar. Riktig respekt för sporten." },
         "transform": { "title": "Transformationen", "body": "Du kommer nyfiken. Du åker hem och rör dig, äter och sover annorlunda." },
-        "scope": { "title": "Skalbart för alla nivåer", "body": "Från första passet till matchprep. Standarden består. Programmet anpassas." }
+        "scope": { "title": "Alla nivåer", "body": "Från första passet till matchprep. Standarden består — programmet anpassas." }
       }
     },
     "gym": {
       "title": "Varför Mike's Gym Marbella",
-      "body": "Ett riktigt boxningsgym med boende, återhämtning och riktig mat, i bergsmiljö 30 minuter från Málaga flygplats.",
+      "body": "Ett legendariskt boxningsgym med boende, återhämtning och performance-kök — i bergsmiljö, 30 minuter från Málaga flygplats.",
       "items": {
         "gym": "Fullskaligt boxningsgym",
         "stay": "Boende på plats",
@@ -80,50 +80,40 @@
       }
     },
     "outcomes": {
-      "title": "Det du tar med dig hem",
+      "title": "DET DU TAR MED DIG HEM",
       "items": ["Självförtroende", "Teknik", "Energi", "Disciplin", "Klarhet", "Fysik", "Ett riktigt reset"]
     },
-    "holidayPreview": {
-      "title": "Boxningsretreaten",
-      "sub": "Fem, sju eller tio dagar. Boxning, återhämtning, riktig mat, bergsluft.",
-      "for": "Vem den är för",
-      "forBody": "Resenärer som vill ha något på riktigt. Nybörjare välkomna. Vältränade gäster lika välkomna.",
-      "includes": "Vad som ingår",
-      "addons": "Valbara tillval",
-      "addonsBody": "Flygplatstransfer, privata 1:1-pass, rumsuppgradering.",
-      "cta": "Reservera plats"
-    },
     "founderPreview": {
-      "title": "Founder & Executive Retreat",
-      "sub": "Endast via ansökan. Små grupper. Byggd för att skicka hem dig skarpare.",
-      "body": "Bort från bruset. Träna med struktur. Ät ordentligt. Sov djupt. Kom tillbaka klarare, starkare, lugnare.",
-      "cta": "Ansök till retreaten"
+      "title": "BYT KONFERENSRUM MOT RING, PADS OCH BERGSLUFT.",
+      "body": "Företagsretreater för founders, ledningsgrupper och team som vill bygga energi, fokus och sammanhållning på riktigt. 5, 10 eller 15+ personer.",
+      "cta": "Boka strategisamtal"
     },
-    "testimonials": { "title": "Vad gäster säger" },
-    "pricing": {
-      "title": "Enkel väg in",
-      "sub": "Slutpris per datum och paket. Indikativa startpunkter nedan.",
-      "trial": "Prova på-pass",
-      "retreat": "Boxningsretreat",
-      "executive": "Executive Retreat",
-      "from": "från"
+    "private": {
+      "eyebrow": "Premium 1:1",
+      "title": "Privat coaching med Mark Lodge",
+      "body": "En coach, en klient. Den snabbaste vägen till verklig förändring — oavsett om du är nybörjare eller förbereder dig för match.",
+      "cta": "Boka 1:1 nu"
     },
-    "location": {
-      "title": "Här tränar du",
-      "sub": "I bergen ovanför La Cala de Mijas — vägbeskrivningen spelar roll."
+    "testimonials": {
+      "title": "VAD GÄSTER SÄGER",
+      "items": [
+        { "quote": "Bästa träningsveckan jag någonsin gjort. Kom hem starkare i kropp och huvud.", "name": "Anna H.", "role": "Holiday Camp" },
+        { "quote": "Mark är den första coach som faktiskt fick min teknik att klicka. Värt varje euro.", "name": "Johan E.", "role": "1:1 Coaching" },
+        { "quote": "Vårt team gjorde en retreat och kom hem som en annan grupp. Rekommenderar.", "name": "Lina S.", "role": "Business Retreat" }
+      ]
     },
-    "faqPreview": { "title": "Snabba svar", "all": "Se alla FAQ" },
+    "faqPreview": { "title": "Snabba svar", "all": "Se alla frågor" },
     "finalCta": {
-      "title": "Sätt på handskarna.",
-      "sub": "Välj en dörr. Boka dina datum. Resten fixar vi."
+      "title": "SÄTT PÅ HANDSKARNA.",
+      "sub": "Välj ett upplägg. Boka dina datum. Resten fixar vi."
     }
   },
   "footer": {
-    "tagline": "Premium boxningscoaching, på Mike's Gym Marbella.",
+    "tagline": "Premium boxningscoaching med Mark Lodge — på Mike's Gym Marbella.",
     "rights": "Alla rättigheter förbehållna.",
     "hostedAt": "På Mike's Gym Marbella"
   },
-  "stickyCta": "Boka eller skriv",
+  "stickyCta": "Boka nu",
   "common": {
     "soon": "Kommer snart",
     "placeholder": "Redigerbar platshållare",

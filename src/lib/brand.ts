@@ -1,11 +1,11 @@
 export const BRAND = {
-  name: "LODGEY'S BOXING",
-  fullName: "LODGEY'S BOXING @ MIKES GYM MARBELLA",
-  short: "LODGEY'S",
-  tagline: "Premium boxing. Real coaching. Hosted at Mike's Gym Marbella.",
+  name: "MARK LODGE BOXING",
+  fullName: "MARK LODGE BOXING @ MIKE'S GYM MARBELLA",
+  short: "MARK LODGE",
+  tagline: "Premium boxningscoaching. Riktig träning. På Mike's Gym Marbella.",
   whatsappNumber: "34600000000", // PLACEHOLDER — replace with real number in admin / .env
   whatsappDisplay: "WhatsApp",
-  email: "hello@lodgeysboxing.com", // PLACEHOLDER
+  email: "hello@marklodgeboxing.com", // PLACEHOLDER
   address: {
     street: "La Majadilla del Muerto 210",
     city: "Las Lagunas de Mijas",

@@ -5,10 +5,10 @@ import cardFounder from "@/assets/card-founder.jpg";
 export const Route = createFileRoute("/founder-executive-retreat")({
   head: () => ({
     meta: [
-      { title: "Founder & Executive Boxing Retreat — Lodgey's Boxing Marbella" },
-      { name: "description", content: "Application-only boxing retreat for founders, leaders and executive teams. Train, reset, return sharper. Small groups in Marbella." },
-      { property: "og:title", content: "Founder & Executive Retreat — Lodgey's Boxing" },
-      { property: "og:description", content: "Application-only. Small groups. Built around clarity, energy and discipline." },
+      { title: "Business Boxing Retreat i Marbella — Mark Lodge Boxing" },
+      { name: "description", content: "Boxningsretreat för founders, ledare och företagsteam. Energi, fokus, sammanhållning. 5, 10 eller 15+ personer. Boka strategisamtal." },
+      { property: "og:title", content: "Business Boxing Retreat — Mark Lodge Boxing" },
+      { property: "og:description", content: "Byt konferensrum mot ring, pads och bergsluft." },
       { property: "og:url", content: "/founder-executive-retreat" },
       { property: "og:image", content: cardFounder },
     ],
@@ -20,31 +20,38 @@ export const Route = createFileRoute("/founder-executive-retreat")({
 function Page() {
   return (
     <PageShell
-      eyebrow="03 — Founders & Executives"
-      title="Founder & Executive Retreat"
-      intro="Application-only. Small groups. Built for founders and leaders who need to step away from the noise, train with structure and come back sharper."
+      eyebrow="03 — Business Retreat"
+      title="BYT KONFERENSRUM MOT RING, PADS OCH BERGSLUFT."
+      intro="Träningsresa för founders, ledningsgrupper och team som vill bygga energi, fokus och sammanhållning på riktigt. Vi skräddarsyr upplägget för 5, 10 eller 15+ personer."
       heroImage={cardFounder}
-      ctaPrimary={{ label: "Apply for the retreat", to: "/apply" }}
-      whatsappPrefill="Hi! I'd like to apply for the Founder & Executive Retreat."
+      ctaPrimary={{ label: "Boka strategisamtal", to: "/apply" }}
+      whatsappPrefill="Hej! Vi vill boka strategisamtal för Business Boxing Retreat."
     >
-      <Section title="The format">
+      <Section title="Formatet">
         <ul>
-          <li>Small cohort, application-led</li>
-          <li>Boxing twice daily — built around your level</li>
-          <li>Strategy windows, breathwork, ice bath, mobility</li>
-          <li>Performance kitchen, no decisions on food</li>
-          <li>Optional 1:1 coaching with Lodgey</li>
+          <li>Liten grupp — 5, 10 eller 15+ personer</li>
+          <li>Boxning två gånger om dagen — anpassat efter nivå</li>
+          <li>Strategifönster, andning, isbad och mobilitet</li>
+          <li>Performance-kök — inga beslut behöver tas om mat</li>
+          <li>Valbara 1:1-pass med Mark Lodge</li>
         </ul>
       </Section>
-      <Section title="Why founders come here">
-        <p>Most retreats hand you a green smoothie and a mantra. This one hands you gloves, structure and silence. You arrive overstimulated. You leave clear.</p>
+      <Section title="Varför företag väljer det här">
+        <p>De flesta retreats ger dig en grön smoothie och ett mantra. Den här ger dig handskar, struktur och tystnad. Ni kommer hit överstimulerade. Ni åker hem som ett annat team.</p>
       </Section>
-      <Section title="How it works">
+      <Section title="Så funkar det">
         <ol>
-          <li>You submit a short application</li>
-          <li>We get on a discovery call</li>
-          <li>If it's a fit, we send a personal offer with dates and price</li>
+          <li>Du bokar ett kort strategisamtal</li>
+          <li>Vi ringer och förstår ert team och era mål</li>
+          <li>Ni får en personlig offert med datum och pris</li>
         </ol>
+      </Section>
+      <Section title="Gruppstorlekar">
+        <ul>
+          <li><strong>5 personer:</strong> ledningsgrupp / founders-cirkel</li>
+          <li><strong>10 personer:</strong> nyckelteam eller offsite</li>
+          <li><strong>15+ personer:</strong> custom — vi skräddarsyr boende och program</li>
+        </ul>
       </Section>
     </PageShell>
   );

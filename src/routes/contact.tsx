@@ -1,14 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell, Section } from "@/components/site/PageShell";
+import { MapEmbed } from "@/components/site/MapEmbed";
 import { BRAND, whatsappLink } from "@/lib/brand";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Lodgey's Boxing @ Mike's Gym Marbella" },
-      { name: "description", content: "Get in touch with Lodgey's Boxing. WhatsApp, email or visit us in person at Mike's Gym Marbella." },
-      { property: "og:title", content: "Contact — Lodgey's Boxing" },
-      { property: "og:description", content: "WhatsApp, email or visit us." },
+      { title: "Kontakt & vägbeskrivning — Mark Lodge Boxing @ Mike's Gym Marbella" },
+      { name: "description", content: "Kontakta Mark Lodge Boxing. WhatsApp, mejl eller besök oss på Mike's Gym Marbella. Karta och vägbeskrivning." },
+      { property: "og:title", content: "Kontakt — Mark Lodge Boxing" },
+      { property: "og:description", content: "WhatsApp, mejl eller besök oss på plats." },
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
@@ -18,18 +19,21 @@ export const Route = createFileRoute("/contact")({
 
 function Page() {
   return (
-    <PageShell eyebrow="Contact" title="Get in touch" intro="The fastest way to reach us is WhatsApp. We reply personally." whatsappPrefill="Hi! I'd like to get in touch with Lodgey's Boxing.">
+    <PageShell eyebrow="Kontakt" title="HITTA HIT & HÖR AV DIG" intro="Snabbaste sättet att nå oss är WhatsApp. Vi svarar personligen." whatsappPrefill="Hej! Jag vill komma i kontakt med Mark Lodge Boxing.">
+      <Section title="Karta & vägbeskrivning">
+        <MapEmbed />
+      </Section>
       <Section title="WhatsApp">
         <p>
           <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-            Open WhatsApp →
+            Öppna WhatsApp →
           </a>
         </p>
       </Section>
-      <Section title="Email">
+      <Section title="Mejl">
         <p><a href={`mailto:${BRAND.email}`} className="text-primary hover:underline">{BRAND.email}</a></p>
       </Section>
-      <Section title="Visit">
+      <Section title="Besök oss">
         <p>{BRAND.address.street}<br />{BRAND.address.postal} {BRAND.address.city}, {BRAND.address.country}</p>
       </Section>
     </PageShell>

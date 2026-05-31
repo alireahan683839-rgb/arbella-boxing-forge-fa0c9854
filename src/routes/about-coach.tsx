@@ -5,10 +5,10 @@ import heroImg from "@/assets/hero-boxer.jpg";
 export const Route = createFileRoute("/about-coach")({
   head: () => ({
     meta: [
-      { title: "Coach Mark Lodgey — Lodgey's Boxing @ Mike's Gym Marbella" },
-      { name: "description", content: "Meet Mark Lodgey — the coach behind Lodgey's Boxing at Mike's Gym Marbella. Real boxing, real coaching, real standards." },
-      { property: "og:title", content: "Coach Mark Lodgey — Lodgey's Boxing" },
-      { property: "og:description", content: "The coach behind Lodgey's Boxing at Mike's Gym Marbella." },
+      { title: "Mark Lodge — coachen bakom Mark Lodge Boxing @ Mike's Gym Marbella" },
+      { name: "description", content: "Möt Mark Lodge — coachen bakom Mark Lodge Boxing på Mike's Gym Marbella. Riktig boxning, riktig coaching, riktig standard." },
+      { property: "og:title", content: "Mark Lodge — coachen" },
+      { property: "og:description", content: "Coachen bakom Mark Lodge Boxing på Mike's Gym Marbella." },
       { property: "og:url", content: "/about-coach" },
       { property: "og:image", content: heroImg },
     ],
@@ -20,21 +20,25 @@ export const Route = createFileRoute("/about-coach")({
 function Page() {
   return (
     <PageShell
-      eyebrow="The Coach"
-      title="Mark Lodgey"
-      intro="A life in the sport. A coach for kids, for adults, for fighters and for founders. The same standard, adapted to the person in front of him."
+      eyebrow="Coachen"
+      title="MARK LODGE"
+      intro="Ett liv i sporten. En coach för barn, vuxna, fighters och founders. Samma standard — anpassad till personen framför honom."
       heroImage={heroImg}
     >
       <Section title="Approach">
-        <p>Boxing taught properly is one of the most honest things you can do with your time. You can't fake it, you can't shortcut it, and the gym tells the truth quickly. Lodgey's coaching is built on that: structure first, ego nowhere.</p>
+        <p>Boxning lärd på rätt sätt är en av de mest ärliga saker du kan göra med din tid. Du kan inte fejka det, du kan inte ta genvägar, och gymet säger alltid sanningen. Marks coaching är byggd på det: struktur först, ego ingenstans.</p>
       </Section>
-      <Section title="Credentials">
-        <p className="text-sm text-muted-foreground italic">Final credentials, fight records and logos will be added once verified. Placeholder list below is editable in admin.</p>
+      <Section title="Erfarenhet & meriter">
+        <p className="text-sm text-muted-foreground italic">Slutliga meriter, matchrekord och logotyper läggs in när de är verifierade. Listan nedan är platshållare och redigeras i admin.</p>
         <ul>
-          <li>Years in the sport — placeholder</li>
-          <li>Coaching certifications — placeholder</li>
-          <li>Notable fights cornered — placeholder</li>
+          <li>År i sporten — platshållare</li>
+          <li>Coaching-certifieringar — platshållare</li>
+          <li>Tunga matcher cornerade — platshållare</li>
+          <li>Mike's Gym Marbella — partner & hemmagym</li>
         </ul>
+      </Section>
+      <Section title="Träna med Mark">
+        <p>Mark coachar lokala klasser, Holiday Boxing Camp, Business Retreats och privata 1:1. Välj din väg och boka direkt — eller skriv på WhatsApp om du vill prata först.</p>
       </Section>
     </PageShell>
   );
