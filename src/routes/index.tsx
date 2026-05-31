@@ -184,29 +184,29 @@ function Hero() {
       <div className="absolute inset-0 light-leak opacity-90" />
       <div className="absolute inset-0 grain" />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-24 md:pb-32 w-full">
-        <p className="text-[10px] sm:text-xs uppercase tracking-[0.35em] text-primary mb-5 reveal is-visible">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-20 md:pb-28 w-full">
+        <p className="text-[10px] sm:text-xs uppercase tracking-[0.35em] text-primary/90 mb-6 reveal is-visible">
           Lodgey's Boxing · Hosted at Mike's Gym Marbella
         </p>
-        <h1 className="font-display text-[3.25rem] sm:text-7xl lg:text-[8.5rem] leading-[0.9] tracking-tight max-w-5xl">
-          Elite Boxing Coaching.
+        <h1 className="font-display text-[2.5rem] sm:text-5xl lg:text-7xl xl:text-[5.5rem] leading-[0.95] tracking-tight max-w-4xl">
+          Elite Boxing Coaching
           <br />
-          <span className="text-primary">Marbella Fight Camp Energy.</span>
+          <span className="text-primary">at Mike's Gym Marbella.</span>
         </h1>
-        <p className="mt-6 text-base md:text-xl text-muted-foreground max-w-2xl text-pretty">
-          Private coaching, local boxing classes and premium boxing retreats hosted at Mike's Gym Marbella.
+        <p className="mt-6 text-sm sm:text-base md:text-lg text-muted-foreground max-w-xl text-pretty">
+          Private coaching, local boxing classes and premium boxing retreats in the hills above La Cala de Mijas.
         </p>
 
-        <div className="mt-10 flex flex-col sm:flex-row gap-3">
+        <div className="mt-8 md:mt-10 flex flex-col sm:flex-row gap-3">
           <Link
             to="/book"
-            className="cta-glow inline-flex items-center justify-center gap-2 px-7 py-4 bg-primary text-primary-foreground text-xs uppercase tracking-widest font-semibold"
+            className="cta-glow inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-primary text-primary-foreground text-[11px] uppercase tracking-[0.2em] font-semibold"
           >
-            Book Your Boxing Experience <ArrowRight className="h-4 w-4" />
+            Book Your Experience <ArrowRight className="h-4 w-4" />
           </Link>
           <a
             href="#paths"
-            className="inline-flex items-center justify-center gap-2 px-7 py-4 border border-border/80 text-foreground text-xs uppercase tracking-widest hover:border-primary hover:text-primary transition-colors"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-border/80 text-foreground text-[11px] uppercase tracking-[0.2em] hover:border-primary hover:text-primary transition-colors"
           >
             Choose Your Path
           </a>
@@ -214,14 +214,14 @@ function Hero() {
             href={whatsappLink("Hi! I'd like to know more about Lodgey's Boxing.")}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-5 py-4 text-xs uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors"
+            className="inline-flex items-center justify-center gap-2 px-4 py-3.5 text-[11px] uppercase tracking-[0.2em] text-muted-foreground hover:text-primary transition-colors"
           >
             <MessageCircle className="h-4 w-4" /> WhatsApp
           </a>
         </div>
 
-        <p className="mt-8 text-[11px] sm:text-xs uppercase tracking-[0.25em] text-muted-foreground/90 max-w-2xl">
-          Hosted at Mike's Gym Marbella · All levels welcome · Led by champion coach Mark Lodge
+        <p className="mt-8 text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-muted-foreground/80 max-w-2xl">
+          Led by Mark Lodge · Champion coach · All levels welcome
         </p>
       </div>
 
@@ -264,10 +264,10 @@ function Paths() {
   return (
     <section id="paths" className="py-24 md:py-32 relative">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div ref={ref} className="reveal flex flex-col md:flex-row md:items-end justify-between gap-4 mb-14">
+        <div ref={ref} className="reveal flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">01 — Choose Your Path</p>
-            <h2 className="font-display text-4xl md:text-6xl leading-none">Three doors in. One standard.</h2>
+            <h2 className="font-display text-3xl md:text-5xl leading-[1.05]">Three doors in. One standard.</h2>
           </div>
           <p className="text-muted-foreground md:max-w-sm">
             Locals, travellers, founders — pick the one that fits you. No wrong answer.
@@ -364,7 +364,7 @@ function PathCard({
       </div>
       <div className={`relative mt-auto p-6 ${big ? "md:p-10" : "md:p-7"}`}>
         <p className="text-[10px] uppercase tracking-[0.3em] text-primary mb-3">{eyebrow}</p>
-        <h3 className={`font-display leading-none mb-3 ${big ? "text-4xl md:text-6xl" : "text-3xl md:text-4xl"}`}>
+        <h3 className={`font-display leading-[1.05] mb-3 ${big ? "text-3xl md:text-5xl" : "text-2xl md:text-3xl"}`}>
           {title}
         </h3>
         <p className="text-sm text-foreground/85 mb-2">{forWho}</p>
@@ -408,7 +408,7 @@ function Coach() {
         {/* Bio */}
         <div className="lg:col-span-7">
           <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">02 — Meet Your Coach</p>
-          <h2 className="font-display text-4xl md:text-6xl leading-[0.95] mb-6">
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] mb-6">
             Coached by a champion.<br />
             Built for every level.
           </h2>
@@ -468,7 +468,7 @@ function Different() {
     <section className="py-24 md:py-32 border-t border-border/50">
       <div ref={ref} className="reveal mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">03 — The Difference</p>
-        <h2 className="font-display text-4xl md:text-6xl leading-none max-w-3xl mb-16">
+        <h2 className="font-display text-3xl md:text-5xl leading-[1.05] max-w-3xl mb-14">
           Why this isn't another gym session.
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -500,7 +500,7 @@ function GymSection() {
       <div ref={ref} className="reveal mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">04 — The Gym</p>
-          <h2 className="font-display text-4xl md:text-6xl leading-none mb-6">Hosted at Mike's Gym Marbella.</h2>
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] mb-6">Hosted at Mike's Gym Marbella.</h2>
           <p className="text-muted-foreground text-lg mb-8 text-pretty">
             A serious training environment in the hills of La Cala de Mijas — with boxing facilities, accommodation, food and the space to fully reset.
           </p>
@@ -549,7 +549,7 @@ function Outcomes() {
         What you take home
       </p>
       <div className="overflow-hidden">
-        <div className="marquee-track flex gap-12 whitespace-nowrap font-display text-5xl md:text-8xl leading-none">
+        <div className="marquee-track flex gap-12 whitespace-nowrap font-display text-4xl md:text-6xl leading-none">
           {loop.map((w, i) => (
             <span key={i} className={i % 2 === 0 ? "text-foreground" : "text-primary"}>
               {w} <span className="text-muted-foreground">·</span>
@@ -572,7 +572,7 @@ function HolidayPreview() {
       <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/60" />
       <div ref={ref} className="reveal relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">05 — Holiday Retreat</p>
-        <h2 className="font-display text-4xl md:text-7xl leading-[0.95] max-w-3xl mb-6">
+        <h2 className="font-display text-3xl md:text-5xl leading-[1.05] max-w-3xl mb-6">
           Five, seven or ten days that change something.
         </h2>
         <p className="text-muted-foreground text-lg max-w-2xl mb-8">
@@ -600,7 +600,7 @@ function FounderPreview() {
       <div className="absolute inset-0 bg-gradient-to-l from-background via-background/95 to-background/60" />
       <div ref={ref} className="reveal relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 lg:text-right lg:ml-auto lg:max-w-3xl">
         <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">06 — Founders & Executives</p>
-        <h2 className="font-display text-4xl md:text-7xl leading-[0.95] mb-6">
+        <h2 className="font-display text-3xl md:text-5xl leading-[1.05] mb-6">
           Reset your body. Sharpen your mind.
         </h2>
         <p className="text-muted-foreground text-lg mb-8 lg:ml-auto">
@@ -626,7 +626,7 @@ function Testimonials() {
     <section className="py-24 md:py-32 border-t border-border/50">
       <div ref={ref} className="reveal mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">07 — Guests</p>
-        <h2 className="font-display text-4xl md:text-6xl leading-none mb-14 max-w-3xl">What guests say.</h2>
+        <h2 className="font-display text-3xl md:text-5xl leading-[1.05] mb-14 max-w-3xl">What guests say.</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <figure key={i} className="card-lift border border-border bg-surface/60 p-7 flex flex-col">
@@ -664,7 +664,7 @@ function PricingTeaser() {
     <section className="py-24 md:py-32 border-t border-border/50">
       <div ref={ref} className="reveal mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">08 — A simple way in</p>
-        <h2 className="font-display text-4xl md:text-6xl leading-none mb-4 max-w-3xl">Transparent pricing.</h2>
+        <h2 className="font-display text-3xl md:text-5xl leading-[1.05] mb-4 max-w-3xl">Transparent pricing.</h2>
         <p className="text-muted-foreground mb-12 max-w-2xl">Indicative starting points. Final pricing per date and package.</p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {items.map((it) => (
@@ -674,7 +674,7 @@ function PricingTeaser() {
               className="card-lift group border border-border bg-surface/60 p-6 flex flex-col"
             >
               <div className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2">{it.label}</div>
-              <div className="font-display text-5xl text-primary leading-none mb-2">{it.price}</div>
+              <div className="font-display text-4xl md:text-5xl text-primary leading-none mb-2">{it.price}</div>
               <div className="text-xs text-muted-foreground mb-6">{it.per}</div>
               <span className="mt-auto inline-flex items-center gap-2 text-xs uppercase tracking-widest text-foreground group-hover:text-primary transition-colors">
                 Details <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
@@ -698,7 +698,7 @@ function LocationSection() {
       <div ref={ref} className="reveal mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-10">
         <div className="lg:col-span-5">
           <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">09 — Where you'll train</p>
-          <h2 className="font-display text-4xl md:text-6xl leading-none mb-6">In the hills above La Cala de Mijas.</h2>
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] mb-6">In the hills above La Cala de Mijas.</h2>
           <address className="not-italic text-foreground/90 text-base mb-6">
             Mike's Gym Marbella<br />
             {BRAND.address.street}<br />
@@ -747,7 +747,7 @@ function FaqPreview() {
     <section className="py-24 md:py-32 border-t border-border/50">
       <div ref={ref} className="reveal mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">10 — Quick Answers</p>
-        <h2 className="font-display text-4xl md:text-6xl leading-none mb-10">Before you book.</h2>
+        <h2 className="font-display text-3xl md:text-5xl leading-[1.05] mb-10">Before you book.</h2>
         <div className="divide-y divide-border border-y border-border">
           {faqPreview.map((f) => (
             <details key={f.q} className="group py-5">
@@ -782,7 +782,7 @@ function FinalCta() {
       <div className="absolute inset-0 light-leak opacity-50" />
       <div ref={ref} className="reveal relative mx-auto max-w-4xl px-4">
         <p className="text-xs uppercase tracking-[0.3em] text-primary mb-6">11 — Start your reset</p>
-        <h2 className="font-display text-6xl md:text-[8rem] leading-[0.9]">
+        <h2 className="font-display text-4xl md:text-7xl leading-[1.0]">
           Choose your path.<br /><span className="text-primary">Start your reset.</span>
         </h2>
         <p className="mt-8 text-lg text-muted-foreground max-w-2xl mx-auto">
