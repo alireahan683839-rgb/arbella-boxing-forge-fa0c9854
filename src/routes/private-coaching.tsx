@@ -5,10 +5,10 @@ import heroImg from "@/assets/hero-boxer.jpg";
 export const Route = createFileRoute("/private-coaching")({
   head: () => ({
     meta: [
-      { title: "Private 1:1 Boxing Coaching — Marbella | Lodgey's Boxing" },
-      { name: "description", content: "1:1 boxing coaching with Coach Lodgey at Mike's Gym Marbella. Beginner to fight-prep. Book a session." },
-      { property: "og:title", content: "Private 1:1 Boxing Coaching — Marbella" },
-      { property: "og:description", content: "Direct, focused, no fluff. Private boxing coaching at Mike's Gym Marbella." },
+      { title: "Private Boxing Coach Marbella | 1:1 Coaching with Mark Lodge" },
+      { name: "description", content: "Book private 1:1 boxing coaching in Marbella with Mark Lodge. Beginner technique, fitness, confidence, fight preparation and executive coaching available." },
+      { property: "og:title", content: "Private Boxing Coach Marbella | 1:1 Coaching with Mark Lodge" },
+      { property: "og:description", content: "Champion-led private boxing coaching at Mike's Gym Marbella — beginner to fight prep." },
       { property: "og:url", content: "/private-coaching" },
       { property: "og:image", content: heroImg },
     ],
