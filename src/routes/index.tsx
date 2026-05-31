@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import * as React from "react";
 import { ArrowRight, MapPin, MessageCircle, Check, Trophy, Shield, Flag, Star, Quote, Plus } from "lucide-react";
 import heroAction from "@/assets/coach-action.jpg";
 import heroProfile from "@/assets/coach-profile.jpg";
