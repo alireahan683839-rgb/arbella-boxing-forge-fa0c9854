@@ -5,10 +5,10 @@ import cardLocal from "@/assets/card-local.jpg";
 export const Route = createFileRoute("/local-boxing-academy")({
   head: () => ({
     meta: [
-      { title: "Lokala boxningsklasser i La Cala de Mijas — Mark Lodge Boxing" },
-      { name: "description", content: "Veckovisa boxningsklasser för barn, ungdomar, vuxna, motionärer och tävlingsgrupp. Riktig coaching på Mike's Gym Marbella. Boka prova-på-pass." },
-      { property: "og:title", content: "Lokala boxningsklasser — Mark Lodge Boxing" },
-      { property: "og:description", content: "Riktig boxning i La Cala de Mijas för alla nivåer." },
+      { title: "Local Boxing Academy — Lodgey's Boxing Marbella" },
+      { name: "description", content: "Weekly boxing classes for kids, teens, adults and competitors. Real coaching at Mike's Gym Marbella. Book a trial class." },
+      { property: "og:title", content: "Local Boxing Academy — Lodgey's Boxing Marbella" },
+      { property: "og:description", content: "Real boxing coaching for kids, teens, adults and competitors at Mike's Gym Marbella." },
       { property: "og:url", content: "/local-boxing-academy" },
       { property: "og:image", content: cardLocal },
     ],
@@ -20,46 +20,38 @@ export const Route = createFileRoute("/local-boxing-academy")({
 function Page() {
   return (
     <PageShell
-      eyebrow="01 — Lokala klasser"
-      title="RIKTIG BOXNING I LA CALA DE MIJAS"
-      intro="Veckovisa gruppass indelade efter nivå — barn, ungdom, vuxna, motionärer och tävlingsgrupp. Riktig boxning i ett riktigt boxningsgym på Mike's Gym Marbella."
+      eyebrow="01 — Local Academy"
+      title="Local Boxing Academy"
+      intro="Weekly group classes structured by level — kids, teens, adults, competitors. Real boxing in a real boxing gym, hosted at Mike's Gym Marbella."
       heroImage={cardLocal}
-      ctaPrimary={{ label: "Boka prova-på-pass", to: "/book" }}
-      whatsappPrefill="Hej! Jag vill boka ett prova-på-pass på Mark Lodge Boxing."
+      ctaPrimary={{ label: "Book a trial class", to: "/book" }}
+      whatsappPrefill="Hi! I'd like to book a trial class at Lodgey's Boxing Academy."
     >
-      <Section title="För vem">
+      <Section title="Who it's for">
         <ul>
-          <li><strong>Barn (8–12):</strong> Koordination, självförtroende och teknik. Ingen sparring.</li>
-          <li><strong>Ungdomar (13–17):</strong> Grunder, kondition och kontrollerad sparring med samtycke.</li>
-          <li><strong>Vuxna — nybörjare & motionärer:</strong> Teknikledd träning med ordentlig kondition.</li>
-          <li><strong>Vuxna — fortsättning:</strong> Bygg ut din arsenal, defensiv och footwork.</li>
-          <li><strong>Tävlingsgrupp:</strong> Matchprep, sparring och individuella program.</li>
+          <li><strong>Kids (8–12):</strong> Coordination, confidence, technique. No sparring.</li>
+          <li><strong>Teens (13–17):</strong> Foundations, fitness, controlled sparring with consent.</li>
+          <li><strong>Adults:</strong> Beginner to advanced. Technique-led, fitness-loaded.</li>
+          <li><strong>Competitors:</strong> Fight prep, sparring, individual programming.</li>
         </ul>
       </Section>
-      <Section title="Vad du får">
+      <Section title="What you get">
         <ul>
-          <li>Strukturerat veckoschema med tydlig progression</li>
-          <li>Coach-ledda pass — inte ett klipp-på-tv-pass</li>
-          <li>Tillgång till hela Mike's Gym</li>
-          <li>Möjlighet att lägga till privat 1:1-coaching</li>
+          <li>Structured weekly schedule with progression</li>
+          <li>Coach-led sessions — not a stream-along class</li>
+          <li>Access to Mike's Gym's full facility</li>
+          <li>Optional 1:1 private coaching add-ons</li>
         </ul>
       </Section>
-      <Section title="Schema">
+      <Section title="Pricing">
         <ul>
-          <li><strong>Måndag–fredag:</strong> Vuxengrupper morgon och kväll</li>
-          <li><strong>Eftermiddagar:</strong> Barn- och ungdomsgrupper</li>
-          <li><strong>Helger:</strong> Öppen sparring & tävlingsgrupp</li>
+          <li><strong>Group class:</strong> €15 per class</li>
+          <li><strong>Private 1:1 (30 min):</strong> €30</li>
+          <li><strong>Private 1:1 (1 hour):</strong> €60</li>
+          <li><strong>Monthly package:</strong> €700 for 3 one-hour 1:1 sessions per week for a month</li>
+          <li><strong>Holiday retreat:</strong> €180 per day — includes room, accommodation and 3 meals a day (extra 1:1 €60/hr · €30/30 min)</li>
         </ul>
-        <p className="text-sm text-muted-foreground">Exakta tider bekräftas vid bokning. Skriv på WhatsApp för aktuellt schema.</p>
-      </Section>
-      <Section title="Pris">
-        <ul>
-          <li><strong>Prova-på / drop-in:</strong> €15 per klass</li>
-          <li><strong>Privat 1:1 (30 min):</strong> €30</li>
-          <li><strong>Privat 1:1 (60 min):</strong> €60</li>
-          <li><strong>Termin 1:1:</strong> €700/månad — 3 timslånga 1:1-pass i veckan</li>
-        </ul>
-        <p className="text-sm text-muted-foreground">Månadsmedlemskap finns. Slutpris bekräftas vid bokning.</p>
+        <p>Monthly memberships available. Final pricing confirmed at booking.</p>
       </Section>
     </PageShell>
   );

@@ -6,10 +6,10 @@ import { whatsappLink } from "@/lib/brand";
 export const Route = createFileRoute("/apply")({
   head: () => ({
     meta: [
-      { title: "Boka strategisamtal — Business Boxing Retreat | Mark Lodge Boxing" },
-      { name: "description", content: "Boka strategisamtal för Business Boxing Retreat på Mike's Gym Marbella. För founders, ledare och team." },
-      { property: "og:title", content: "Boka strategisamtal — Business Retreat" },
-      { property: "og:description", content: "Vi ringer er, förstår teamet och skickar offert." },
+      { title: "Apply — Founder & Executive Retreat | Lodgey's Boxing" },
+      { name: "description", content: "Apply for the Founder & Executive Boxing Retreat at Mike's Gym Marbella. Application-only, small cohorts." },
+      { property: "og:title", content: "Apply — Founder & Executive Retreat" },
+      { property: "og:description", content: "Application-only. Small groups. Built around clarity, energy and discipline." },
       { property: "og:url", content: "/apply" },
       { name: "robots", content: "noindex" },
     ],
@@ -26,24 +26,24 @@ function Page() {
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSent(true);
-    const msg = `Business Boxing Retreat — strategisamtal\nNamn: ${data.name}\nMejl: ${data.email}\nFöretag: ${data.company}\nRoll: ${data.role}\nMål: ${data.goals}`;
+    const msg = `Founder Retreat application\nName: ${data.name}\nEmail: ${data.email}\nCompany: ${data.company}\nRole: ${data.role}\nGoals: ${data.goals}`;
     window.open(whatsappLink(msg), "_blank");
   };
 
   return (
-    <PageShell eyebrow="Strategisamtal" title="BOKA STRATEGISAMTAL" intro="Berätta kort om er. Vi hör av oss, ringer ett kort strategisamtal och skickar sedan en personlig offert med datum och pris.">
+    <PageShell eyebrow="Apply" title="Founder & Executive Retreat" intro="Tell us about you. If it's a fit, we'll set up a short call to confirm dates and price.">
       <form onSubmit={onSubmit} className="mt-8 space-y-4">
         <div className="grid sm:grid-cols-2 gap-4">
-          <input required value={data.name} onChange={set("name")} placeholder="Ditt namn" className="bg-input border border-border px-4 py-3" />
-          <input required type="email" value={data.email} onChange={set("email")} placeholder="Mejl" className="bg-input border border-border px-4 py-3" />
-          <input value={data.company} onChange={set("company")} placeholder="Företag" className="bg-input border border-border px-4 py-3" />
-          <input value={data.role} onChange={set("role")} placeholder="Roll" className="bg-input border border-border px-4 py-3" />
+          <input required value={data.name} onChange={set("name")} placeholder="Full name" className="bg-input border border-border px-4 py-3" />
+          <input required type="email" value={data.email} onChange={set("email")} placeholder="Email" className="bg-input border border-border px-4 py-3" />
+          <input value={data.company} onChange={set("company")} placeholder="Company" className="bg-input border border-border px-4 py-3" />
+          <input value={data.role} onChange={set("role")} placeholder="Role" className="bg-input border border-border px-4 py-3" />
         </div>
-        <textarea required value={data.goals} onChange={set("goals")} placeholder="Gruppstorlek, önskade datum och vad ni vill få ut av retreaten" rows={6} className="w-full bg-input border border-border px-4 py-3" />
+        <textarea required value={data.goals} onChange={set("goals")} placeholder="What are you hoping to get out of this retreat?" rows={6} className="w-full bg-input border border-border px-4 py-3" />
         <button type="submit" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-primary text-primary-foreground text-xs uppercase tracking-widest font-medium">
-          Skicka & öppna WhatsApp
+          Submit application
         </button>
-        {sent && <p className="text-sm text-primary">Tack — vi hör av oss inom 48 timmar.</p>}
+        {sent && <p className="text-sm text-primary">Thanks — we'll review and reply within 48h.</p>}
       </form>
     </PageShell>
   );

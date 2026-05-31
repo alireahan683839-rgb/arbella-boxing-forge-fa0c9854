@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
           <div className="col-span-2">
             <div className="font-display text-2xl tracking-wider">
-              MARK LODGE<span className="text-primary">.</span>
+              LODGEY'S<span className="text-primary">.</span>
             </div>
             <p className="mt-3 text-sm text-muted-foreground max-w-sm">
               {t("footer.tagline")}
@@ -20,7 +20,7 @@ export function Footer() {
             </p>
           </div>
           <div>
-            <h4 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">Upplägg</h4>
+            <h4 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">Programmes</h4>
             <ul className="space-y-2 text-sm">
               <li><Link to="/local-boxing-academy" className="hover:text-primary">{t("nav.local")}</Link></li>
               <li><Link to="/boxing-holiday-retreat" className="hover:text-primary">{t("nav.holiday")}</Link></li>
@@ -29,7 +29,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">Hitta hit</h4>
+            <h4 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">Visit</h4>
             <p className="text-sm text-muted-foreground">{BRAND.address.street}</p>
             <p className="text-sm text-muted-foreground">{BRAND.address.postal} {BRAND.address.city}</p>
             <Link to="/mikes-gym-location" className="text-sm text-primary hover:underline mt-3 inline-block">{t("cta.directions")}</Link>
