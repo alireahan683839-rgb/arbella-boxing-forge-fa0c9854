@@ -7,7 +7,7 @@ import cardLocal from "@/assets/card-local.jpg";
 import cardHoliday from "@/assets/card-holiday.jpg";
 import cardFounder from "@/assets/card-founder.jpg";
 import heroBoxer from "@/assets/hero-boxer.jpg";
-import heroVideo from "@/assets/hero-fightcamp.mp4.asset.json";
+const heroVideo = { url: "/hero-fightcamp.mp4" };
 import { BRAND, whatsappLink } from "@/lib/brand";
 import { useReveal, useCountUp } from "@/hooks/use-reveal";
 
