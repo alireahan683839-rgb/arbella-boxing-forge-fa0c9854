@@ -21,11 +21,14 @@ export const Route = createFileRoute("/contact")({
 function Page() {
   return (
     <PageShell eyebrow="Contact" title="Get in touch" intro="The fastest way to reach us is WhatsApp. We reply personally." whatsappPrefill="Hi! I'd like to get in touch with Lodgey's Boxing.">
-      <Section title="WhatsApp">
+      <Section title="WhatsApp / Phone">
         <p>
           <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
             Open WhatsApp →
           </a>
+        </p>
+        <p className="mt-2">
+          <a href={`tel:${BRAND.whatsappNumber}`} className="text-muted-foreground hover:text-primary">{BRAND.phone}</a>
         </p>
       </Section>
       <Section title="Email">

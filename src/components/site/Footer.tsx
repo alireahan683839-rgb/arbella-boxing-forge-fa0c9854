@@ -36,6 +36,12 @@ export function Footer() {
             <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="block text-sm text-primary hover:underline mt-2">
               {t("cta.whatsapp")}
             </a>
+            <a href={`tel:${BRAND.whatsappNumber}`} className="block text-sm text-muted-foreground hover:text-primary mt-1">
+              {BRAND.phone}
+            </a>
+            <a href={`mailto:${BRAND.email}`} className="block text-sm text-muted-foreground hover:text-primary mt-1">
+              {BRAND.email}
+            </a>
           </div>
         </div>
         <div className="mt-12 pt-6 border-t border-border/40 flex flex-col md:flex-row justify-between gap-4 text-xs text-muted-foreground">
