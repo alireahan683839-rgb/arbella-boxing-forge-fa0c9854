@@ -10,10 +10,11 @@ export const Route = createFileRoute("/about-coach")({
       { name: "description", content: "Meet Mark Lodge — former professional kickboxer, 3-time European Kickboxing Champion, former British and English Champion, professional boxing coach and BBBoC coach." },
       { property: "og:title", content: "Mark Lodge — Champion Kickboxer & Professional Boxing Coach" },
       { property: "og:description", content: "Former Professional Kickboxer. 3× European Kickboxing Champion. Professional Boxing Coach. Head Coach PPBL. BBBoC Coach." },
-      { property: "og:url", content: "/about-coach" },
-      { property: "og:image", content: heroImg },
+      { property: "og:url", content: "https://lodgeysboxing.com/about-coach" },
+      { property: "og:image", content: "https://lodgeysboxing.com/og/coach-profile.jpg" },
+      { name: "twitter:image", content: "https://lodgeysboxing.com/og/coach-profile.jpg" },
     ],
-    links: [{ rel: "canonical", href: "/about-coach" }],
+    links: [{ rel: "canonical", href: "https://lodgeysboxing.com/about-coach" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -21,9 +22,10 @@ export const Route = createFileRoute("/about-coach")({
           "@context": "https://schema.org",
           "@type": "Person",
           name: "Mark Lodge",
+          url: "https://lodgeysboxing.com/about-coach",
           jobTitle: "Professional Boxing Coach",
           description: "Former Professional Kickboxer, 3× European Kickboxing Champion, Former British & English Champion, BBBoC Coach, Head Coach of the Professional Pakistan Boxing League (PPBL).",
-          worksFor: { "@type": "SportsActivityLocation", name: "Mike's Gym Marbella" },
+          worksFor: { "@type": "SportsActivityLocation", name: "Mike's Gym Marbella", url: "https://lodgeysboxing.com" },
           award: [
             "3× European Kickboxing Champion",
             "Former British Champion",

@@ -26,12 +26,12 @@ export const Route = createFileRoute("/")({
         content: "Train. Reset. Come back sharper. Boxing classes, holiday retreats and executive retreats at Mike's Gym Marbella.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
-      { property: "og:image", content: heroAction },
-      { name: "twitter:image", content: heroAction },
+      { property: "og:url", content: "https://lodgeysboxing.com/" },
+      { property: "og:image", content: "https://lodgeysboxing.com/og/coach-action.jpg" },
+      { name: "twitter:image", content: "https://lodgeysboxing.com/og/coach-action.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "/" },
+      { rel: "canonical", href: "https://lodgeysboxing.com/" },
       { rel: "preload", as: "image", href: heroAction, fetchpriority: "high" } as any,
     ],
     scripts: [
@@ -42,7 +42,7 @@ export const Route = createFileRoute("/")({
           "@type": "SportsActivityLocation",
           name: "Lodgey's Boxing @ Mike's Gym Marbella",
           sport: "Boxing",
-          url: "/",
+          url: "https://lodgeysboxing.com/",
           address: {
             "@type": "PostalAddress",
             streetAddress: "La Majadilla del Muerto 210",

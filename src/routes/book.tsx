@@ -11,10 +11,10 @@ export const Route = createFileRoute("/book")({
       { name: "description", content: "Book a trial class, a private 1:1 or reserve your boxing holiday retreat at Mike's Gym Marbella." },
       { property: "og:title", content: "Book — Lodgey's Boxing" },
       { property: "og:description", content: "Book your boxing experience at Mike's Gym Marbella." },
-      { property: "og:url", content: "/book" },
+      { property: "og:url", content: "https://lodgeysboxing.com/book" },
       { name: "robots", content: "noindex" },
     ],
-    links: [{ rel: "canonical", href: "/book" }],
+    links: [{ rel: "canonical", href: "https://lodgeysboxing.com/book" }],
   }),
   component: Page,
 });

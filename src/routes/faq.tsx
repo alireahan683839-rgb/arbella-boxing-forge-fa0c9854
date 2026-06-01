@@ -8,9 +8,11 @@ export const Route = createFileRoute("/faq")({
       { name: "description", content: "Frequently asked questions about Lodgey's Boxing — local classes, holiday retreats, founder retreats and private coaching." },
       { property: "og:title", content: "FAQ — Lodgey's Boxing" },
       { property: "og:description", content: "Everything you need to know before booking." },
-      { property: "og:url", content: "/faq" },
+      { property: "og:url", content: "https://lodgeysboxing.com/faq" },
+      { property: "og:image", content: "https://lodgeysboxing.com/og/coach-action.jpg" },
+      { name: "twitter:image", content: "https://lodgeysboxing.com/og/coach-action.jpg" },
     ],
-    links: [{ rel: "canonical", href: "/faq" }],
+    links: [{ rel: "canonical", href: "https://lodgeysboxing.com/faq" }],
   }),
   component: Page,
 });

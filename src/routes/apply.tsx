@@ -7,13 +7,13 @@ export const Route = createFileRoute("/apply")({
   head: () => ({
     meta: [
       { title: "Apply — Founder & Executive Retreat | Lodgey's Boxing" },
-      { name: "description", content: "Apply for the Founder & Executive Boxing Retreat at Mike's Gym Marbella. Application-only, small cohorts." },
+      { name: "description", content: "Apply for the Founder & Executive Boxing Retreat at Mike's Gym Marbella. Application-only cohorts designed for leaders who need to reset, refocus and return stronger." },
       { property: "og:title", content: "Apply — Founder & Executive Retreat" },
-      { property: "og:description", content: "Application-only. Small groups. Built around clarity, energy and discipline." },
-      { property: "og:url", content: "/apply" },
+      { property: "og:description", content: "Application-only. Small groups. Built around clarity, energy and discipline at Mike's Gym Marbella." },
+      { property: "og:url", content: "https://lodgeysboxing.com/apply" },
       { name: "robots", content: "noindex" },
     ],
-    links: [{ rel: "canonical", href: "/apply" }],
+    links: [{ rel: "canonical", href: "https://lodgeysboxing.com/apply" }],
   }),
   component: Page,
 });

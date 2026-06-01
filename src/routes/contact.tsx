@@ -6,12 +6,14 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Lodgey's Boxing @ Mike's Gym Marbella" },
-      { name: "description", content: "Get in touch with Lodgey's Boxing. WhatsApp, email or visit us in person at Mike's Gym Marbella." },
+      { name: "description", content: "Get in touch with Lodgey's Boxing at Mike's Gym Marbella. Reach us via WhatsApp, email, or visit us in person in La Cala de Mijas, Marbella." },
       { property: "og:title", content: "Contact — Lodgey's Boxing" },
-      { property: "og:description", content: "WhatsApp, email or visit us." },
-      { property: "og:url", content: "/contact" },
+      { property: "og:description", content: "WhatsApp, email or visit us at Mike's Gym Marbella in La Cala de Mijas." },
+      { property: "og:url", content: "https://lodgeysboxing.com/contact" },
+      { property: "og:image", content: "https://lodgeysboxing.com/og/coach-action.jpg" },
+      { name: "twitter:image", content: "https://lodgeysboxing.com/og/coach-action.jpg" },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: "https://lodgeysboxing.com/contact" }],
   }),
   component: Page,
 });

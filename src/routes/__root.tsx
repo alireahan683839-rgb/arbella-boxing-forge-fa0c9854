@@ -4,6 +4,7 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
+  HeadContent,
 } from "@tanstack/react-router";
 import { useEffect } from "react";
 
@@ -90,6 +91,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <HeadContent />
       <Header />
       <main className="min-h-screen">
         <Outlet />

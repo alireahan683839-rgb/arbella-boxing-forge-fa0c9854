@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir *)",
+      "PowerShell(git *)",
+      "Bash(Get-ChildItem -Path \"E:\\\\arbella-boxing-forge-fa0c9854\" -Recurse -Directory)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "PowerShell(New-Item *)"
+    ]
+  }
+}
