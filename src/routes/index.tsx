@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import * as React from "react";
 import { ArrowRight, MapPin, MessageCircle, Check, Trophy, Shield, Flag, Star, Quote, Plus } from "lucide-react";
-import heroAction from "@/assets/coach-action.jpg";
 import heroProfile from "@/assets/coach-profile.jpg";
 import cardLocal from "@/assets/card-local.jpg";
 import cardHoliday from "@/assets/card-holiday.jpg";
@@ -32,7 +31,7 @@ export const Route = createFileRoute("/")({
     ],
     links: [
       { rel: "canonical", href: "https://lodgeysboxing.com/" },
-      { rel: "preload", as: "image", href: heroAction, fetchpriority: "high" } as any,
+      { rel: "preload", as: "video", href: "/hero-fightcamp.mp4", fetchpriority: "high" } as any,
     ],
     scripts: [
       {
@@ -144,41 +143,20 @@ function Index() {
    HERO
 ============================================================ */
 function Hero() {
-  // Detect mobile / reduced data to skip video entirely
-  const [showVideo, setShowVideo] = React.useState(false);
-  React.useEffect(() => {
-    if (typeof window === "undefined") return;
-    const mql = window.matchMedia("(min-width: 768px)");
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const conn = (navigator as any).connection;
-    const slow = conn && (conn.saveData || /2g|3g/.test(conn.effectiveType || ""));
-    if (mql.matches && !reduced.matches && !slow) setShowVideo(true);
-  }, []);
-
   return (
-    <section className="relative min-h-[100svh] flex items-end overflow-hidden">
-      {/* Poster image — always rendered as instant LCP + mobile fallback */}
-      <img
-        src={heroAction}
-        alt="Champion coach Mark Lodge training a boxer at Mike's Gym Marbella"
+    <section className="relative min-h-[100svh] flex items-end overflow-hidden bg-background">
+      {/* Cinematic fight-camp video — full background, all devices */}
+      <video
+        src={heroVideo.url}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        aria-hidden
         className="absolute inset-0 w-full h-full object-cover object-center"
-        loading="eager"
-        fetchPriority="high"
       />
-      {/* Cinematic fight-camp video — desktop only, fades in over the poster */}
-      {showVideo && (
-        <video
-          src={heroVideo.url}
-          poster={heroAction}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          aria-hidden
-          className="absolute inset-0 w-full h-full object-cover object-center animate-fade-in"
-        />
-      )}
+
       {/* Cinematic overlays */}
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/85 to-background/40" />
       {/* Top header readability scrim */}

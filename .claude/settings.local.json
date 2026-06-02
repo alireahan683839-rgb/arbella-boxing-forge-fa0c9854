@@ -5,7 +5,18 @@
       "PowerShell(git *)",
       "Bash(Get-ChildItem -Path \"E:\\\\arbella-boxing-forge-fa0c9854\" -Recurse -Directory)",
       "Bash(Select-Object -ExpandProperty FullName)",
-      "PowerShell(New-Item *)"
+      "PowerShell(New-Item *)",
+      "PowerShell(cmd /c \"dir /b /s E:\\\\sol-growth-collective\\\\src\\\\routes\\\\\")",
+      "PowerShell(cmd /c \"dir /b E:\\\\solana-growth-studio\\\\src\")",
+      "Bash(git -C \"E:\\\\solana-growth-studio\" branch -a)",
+      "Bash(git -C \"E:\\\\solana-growth-studio\" log --oneline -5)",
+      "Bash(git -C \"E:\\\\solana-growth-studio\" show live:vite.config.ts)",
+      "Bash(git -C \"E:\\\\solana-growth-studio\" show live:vercel.json)",
+      "Bash(git -C \"E:\\\\solana-growth-studio\" show live:src/main.tsx)",
+      "Bash(git -C \"E:\\\\solana-growth-studio\" show live:src/routes/index.tsx)",
+      "Bash(git *)",
+      "Bash(xargs grep -l \"onSubmit\\\\|handleSubmit\\\\|supabase\\\\|fetch\\\\|axios\")",
+      "Bash(bun add *)"
     ]
   }
 }
