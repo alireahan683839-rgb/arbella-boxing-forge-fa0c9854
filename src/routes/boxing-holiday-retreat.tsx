@@ -25,7 +25,7 @@ function Page() {
       title="Boxing Holiday Retreat"
       intro="Five, seven or ten days of boxing, recovery, real food and mountain air. Twice-daily training, hosted at Mike's Gym Marbella."
       heroImage={cardHoliday}
-      ctaPrimary={{ label: "Reserve your dates", to: "/book" }}
+      ctaPrimary={{ label: "Reserve your dates", to: "/book?offering=holiday" }}
       whatsappPrefill="Hi! I'd like more info on the Boxing Holiday Retreat."
     >
       <Section title="What's included">

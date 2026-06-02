@@ -25,7 +25,7 @@ function Page() {
       title="Private Coaching"
       intro="One coach, one student. The fastest way to actually get good at boxing. Available as single sessions or block packages."
       heroImage={heroImg}
-      ctaPrimary={{ label: "Book a private session", to: "/book" }}
+      ctaPrimary={{ label: "Book a private session", to: "/book?offering=private" }}
       whatsappPrefill="Hi! I'd like to book a private 1:1 session."
     >
       <Section title="What you can work on">

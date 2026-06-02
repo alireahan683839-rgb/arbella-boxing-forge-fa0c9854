@@ -25,7 +25,7 @@ function Page() {
       title="Local Boxing Academy"
       intro="Weekly group classes structured by level — kids, teens, adults, competitors. Real boxing in a real boxing gym, hosted at Mike's Gym Marbella."
       heroImage={cardLocal}
-      ctaPrimary={{ label: "Book a trial class", to: "/book" }}
+      ctaPrimary={{ label: "Book a trial class", to: "/book?offering=trial" }}
       whatsappPrefill="Hi! I'd like to book a trial class at Lodgey's Boxing Academy."
     >
       <Section title="Who it's for">

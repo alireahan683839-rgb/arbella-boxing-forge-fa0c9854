@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { PageShell } from "@/components/site/PageShell";
-import { whatsappLink, BRAND } from "@/lib/brand";
+import { BRAND } from "@/lib/brand";
 import { MessageCircle } from "lucide-react";
 
 const EJS = {
@@ -13,6 +13,9 @@ const EJS = {
 } as const;
 
 export const Route = createFileRoute("/book")({
+  validateSearch: (search: Record<string, unknown>) => ({
+    offering: (search.offering as Offering) ?? "trial",
+  }),
   head: () => ({
     meta: [
       { title: "Book — Lodgey's Boxing @ Mike's Gym Marbella" },
@@ -50,7 +53,8 @@ function buildDetailsHtml(offering: Offering, notes: string) {
 }
 
 function Page() {
-  const [offering, setOffering] = useState<Offering>("trial");
+  const { offering: initialOffering } = Route.useSearch();
+  const [offering, setOffering] = useState<Offering>(initialOffering);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [notes, setNotes] = useState("");
@@ -69,8 +73,6 @@ function Page() {
       await emailjs.send(EJS.service, EJS.template, payload, EJS.key);
       await emailjs.send(EJS.service, EJS.autoReply, payload, EJS.key);
       setStatus("sent");
-      const msg = `Booking request — ${labels[offering]}\nName: ${name}\nEmail: ${email}\nNotes: ${notes}`;
-      window.open(whatsappLink(msg), "_blank");
     } catch {
       setStatus("error");
     }
@@ -81,7 +83,7 @@ function Page() {
       <PageShell eyebrow="Book" title="Request received" intro="Your booking has been sent to hello@lodgeysboxing.com. We'll confirm within 24 hours.">
         <div className="border border-primary/40 bg-primary/5 p-6 max-w-lg">
           <p className="text-sm text-muted-foreground mb-4">
-            WhatsApp opened in a new tab too — feel free to send a message there for the fastest reply.
+            Check your inbox — we've sent you a confirmation email too.
           </p>
           <button
             type="button"
