@@ -5,7 +5,7 @@ import { BRAND } from "@/lib/brand";
 
 const EJS = {
   service: "service_gbgpe07",
-  template: "template_k96zuvd",
+  template: "template_4uup9ge",
   key: "IgNwobzA_FBLvrWOa",
 } as const;
 
