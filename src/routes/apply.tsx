@@ -41,13 +41,13 @@ function Page() {
         <p className="text-muted-foreground mb-10">Tell us about you. If it's a fit, we'll set up a short call to confirm dates and price.</p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
-          <input type="hidden" name="_subject" value="New retreat application — Lodgey's Boxing" />
+          <input type="hidden" name="_subject" value="New retreat application — Founder & Executive — Lodgey's Boxing" />
 
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
               <input
                 required
-                name="name"
+                name="Name"
                 placeholder="Full name"
                 className="w-full bg-input border border-border px-4 py-3 text-foreground"
               />
@@ -57,7 +57,7 @@ function Page() {
               <input
                 required
                 type="email"
-                name="email"
+                name="Email"
                 placeholder="Email"
                 className="w-full bg-input border border-border px-4 py-3 text-foreground"
               />
@@ -65,14 +65,14 @@ function Page() {
             </div>
             <div>
               <input
-                name="company"
+                name="Company"
                 placeholder="Company"
                 className="w-full bg-input border border-border px-4 py-3 text-foreground"
               />
             </div>
             <div>
               <input
-                name="role"
+                name="Role"
                 placeholder="Role / title"
                 className="w-full bg-input border border-border px-4 py-3 text-foreground"
               />
@@ -82,7 +82,7 @@ function Page() {
           <div>
             <textarea
               required
-              name="goals"
+              name="Goals"
               placeholder="What are you hoping to get out of this retreat?"
               rows={6}
               className="w-full bg-input border border-border px-4 py-3 text-foreground"

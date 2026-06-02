@@ -78,9 +78,9 @@ function Page() {
       </ul>
 
       <form onSubmit={onSubmit} className="mt-8 space-y-6">
-        <input type="hidden" name="_subject" value={`Booking request — ${labels[offering]} — Lodgey's Boxing`} />
-        <input type="hidden" name="offering" value={labels[offering]} />
-        <input type="hidden" name="price" value={prices[offering]} />
+        <input type="hidden" name="_subject" value={`New booking — ${labels[offering]} — Lodgey's Boxing`} />
+        <input type="hidden" name="Offering" value={labels[offering]} />
+        <input type="hidden" name="Price" value={prices[offering]} />
 
         <div>
           <label className="text-xs uppercase tracking-widest text-muted-foreground mb-3 block">Choose</label>
@@ -105,7 +105,7 @@ function Page() {
           <div>
             <input
               required
-              name="name"
+              name="Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Your name"
@@ -117,7 +117,7 @@ function Page() {
             <input
               required
               type="email"
-              name="email"
+              name="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Email"
@@ -129,7 +129,7 @@ function Page() {
 
         <div>
           <textarea
-            name="notes"
+            name="Notes"
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
             placeholder="Dates, level, anything we should know"
