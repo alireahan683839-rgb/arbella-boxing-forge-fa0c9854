@@ -8,6 +8,7 @@ import { MessageCircle } from "lucide-react";
 const EJS = {
   service: "service_gbgpe07",
   template: "template_4uup9ge",
+  autoReply: "template_6u1lsre",
   key: "IgNwobzA_FBLvrWOa",
 } as const;
 
@@ -59,17 +60,14 @@ function Page() {
     e.preventDefault();
     setStatus("sending");
     try {
-      await emailjs.send(
-        EJS.service,
-        EJS.template,
-        {
-          form_type: "Booking Request",
-          customer_name: name,
-          customer_email: email,
-          details_html: buildDetailsHtml(offering, notes),
-        },
-        EJS.key
-      );
+      const payload = {
+        form_type: "Booking Request",
+        customer_name: name,
+        customer_email: email,
+        details_html: buildDetailsHtml(offering, notes),
+      };
+      await emailjs.send(EJS.service, EJS.template, payload, EJS.key);
+      await emailjs.send(EJS.service, EJS.autoReply, payload, EJS.key);
       setStatus("sent");
       const msg = `Booking request — ${labels[offering]}\nName: ${name}\nEmail: ${email}\nNotes: ${notes}`;
       window.open(whatsappLink(msg), "_blank");

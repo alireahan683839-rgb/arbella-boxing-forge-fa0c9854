@@ -6,6 +6,7 @@ import { BRAND } from "@/lib/brand";
 const EJS = {
   service: "service_gbgpe07",
   template: "template_4uup9ge",
+  autoReply: "template_6u1lsre",
   key: "IgNwobzA_FBLvrWOa",
 } as const;
 
@@ -42,17 +43,14 @@ function Page() {
     e.preventDefault();
     setStatus("sending");
     try {
-      await emailjs.send(
-        EJS.service,
-        EJS.template,
-        {
-          form_type: "Retreat Application",
-          customer_name: data.name,
-          customer_email: data.email,
-          details_html: buildDetailsHtml(data.company, data.role, data.goals),
-        },
-        EJS.key
-      );
+      const payload = {
+        form_type: "Retreat Application",
+        customer_name: data.name,
+        customer_email: data.email,
+        details_html: buildDetailsHtml(data.company, data.role, data.goals),
+      };
+      await emailjs.send(EJS.service, EJS.template, payload, EJS.key);
+      await emailjs.send(EJS.service, EJS.autoReply, payload, EJS.key);
       setStatus("sent");
     } catch {
       setStatus("error");
