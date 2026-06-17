@@ -57,12 +57,13 @@ export const Route = createFileRoute("/")({
 });
 
 const credentials = [
+  { icon: Trophy, label: "Former Professional Kickboxer" },
   { icon: Trophy, label: "3× European Kickboxing Champion" },
   { icon: Flag, label: "Former British Champion" },
   { icon: Flag, label: "Former English Champion" },
   { icon: Shield, label: "Professional Boxing Coach" },
-  { icon: Shield, label: "BBBoC Coach" },
-  { icon: Trophy, label: "Head Coach — PPBL" },
+  { icon: Shield, label: "BBBofC Coach — British Boxing Board of Control" },
+  { icon: Trophy, label: "Head Coach — Professional Pakistan Boxing League (PPBL)" },
 ];
 
 const testimonials = [
