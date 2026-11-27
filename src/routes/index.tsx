@@ -182,7 +182,9 @@ function Hero() {
       </div>
 
       {/* Cinematic overlays */}
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/85 to-background/40" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/25" />
+      {/* Left-side scrim keeps headline readable while photos stay visible on the right */}
+      <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/30 to-transparent" />
       {/* Top header readability scrim */}
       <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/80 via-black/40 to-transparent pointer-events-none" />
       <div className="absolute inset-0 light-leak opacity-70" />
