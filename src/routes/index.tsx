@@ -1,14 +1,22 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import * as React from "react";
 import { ArrowRight, MapPin, MessageCircle, Check, Trophy, Shield, Flag, Star, Quote, Plus } from "lucide-react";
-import heroProfile from "@/assets/coach-profile.jpg";
+import coachChampion from "@/assets/coach-champion.webp";
 import cardLocal from "@/assets/card-local.jpg";
 import cardHoliday from "@/assets/card-holiday.jpg";
 import cardFounder from "@/assets/card-founder.jpg";
 import heroBoxer from "@/assets/hero-boxer.jpg";
-const heroVideo = { url: "/hero-fightcamp.mp4" };
+import heroPads from "@/assets/hero-coaching-pads.webp";
+import heroRing from "@/assets/hero-coaching-ring.webp";
 import { BRAND, whatsappLink } from "@/lib/brand";
 import { useReveal, useCountUp } from "@/hooks/use-reveal";
+
+/* Hero background slides — crossfade every HERO_SLIDE_MS */
+const HERO_SLIDES = [
+  { src: heroPads, position: "object-[60%_center]" },
+  { src: heroRing, position: "object-[28%_center] md:object-center" },
+];
+const HERO_SLIDE_MS = 6000;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -31,7 +39,7 @@ export const Route = createFileRoute("/")({
     ],
     links: [
       { rel: "canonical", href: "https://lodgeysboxing.com/" },
-      { rel: "preload", as: "video", href: "/hero-fightcamp.mp4", fetchpriority: "high" } as any,
+      { rel: "preload", as: "image", href: heroPads, fetchpriority: "high" } as any,
     ],
     scripts: [
       {
@@ -144,19 +152,34 @@ function Index() {
    HERO
 ============================================================ */
 function Hero() {
+  const [active, setActive] = React.useState(0);
+
+  React.useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const id = window.setInterval(
+      () => setActive((i) => (i + 1) % HERO_SLIDES.length),
+      HERO_SLIDE_MS,
+    );
+    return () => window.clearInterval(id);
+  }, []);
+
   return (
     <section className="relative min-h-[100svh] flex items-end overflow-hidden bg-background">
-      {/* Cinematic fight-camp video — full background, all devices */}
-      <video
-        src={heroVideo.url}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        aria-hidden
-        className="absolute inset-0 w-full h-full object-cover object-center"
-      />
+      {/* Coaching photos — full background, auto crossfade */}
+      <div aria-hidden className="absolute inset-0">
+        {HERO_SLIDES.map((slide, i) => (
+          <img
+            key={slide.src}
+            src={slide.src}
+            alt=""
+            decoding="async"
+            fetchPriority={i === 0 ? "high" : "low"}
+            className={`hero-slide absolute inset-0 w-full h-full object-cover ${slide.position} transition-opacity duration-[1800ms] ease-in-out ${
+              i === active ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
+      </div>
 
       {/* Cinematic overlays */}
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/85 to-background/40" />
@@ -374,12 +397,12 @@ function Coach() {
         <div className="lg:col-span-5 relative">
           <div className="aspect-[4/5] overflow-hidden border border-border relative">
             <img
-              src={heroProfile}
+              src={coachChampion}
               alt="Coach Mark Lodge — Former Professional Kickboxer & Professional Boxing Coach"
               loading="lazy"
-              className="w-full h-full object-cover grayscale contrast-110"
+              className="w-full h-full object-cover object-top"
             />
-            <div className="absolute inset-0 light-leak opacity-40" />
+            <div className="absolute inset-0 light-leak opacity-25" />
           </div>
           <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-4 py-2 text-[10px] uppercase tracking-[0.25em]">
             BBBoC Coach

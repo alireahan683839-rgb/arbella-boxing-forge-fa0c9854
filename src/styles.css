@@ -214,11 +214,21 @@
     animation: marquee 40s linear infinite;
   }
 
+  /* Hero background slides — slow cinematic drift */
+  @keyframes hero-drift {
+    from { transform: scale(1); }
+    to { transform: scale(1.08); }
+  }
+  .hero-slide {
+    animation: hero-drift 14s ease-in-out infinite alternate;
+    will-change: opacity, transform;
+  }
+
   /* Reduced motion */
   @media (prefers-reduced-motion: reduce) {
     .reveal { opacity: 1; transform: none; transition: none; }
     .card-lift, .cta-glow { transition: none; }
     .card-lift:hover, .cta-glow:hover { transform: none; box-shadow: none; }
-    .marquee-track { animation: none; }
+    .marquee-track, .hero-slide { animation: none; }
   }
 }

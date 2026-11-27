@@ -30,3 +30,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Raw photo deliveries (web versions live in src/assets)
+Lodgeys_Boxing_GODKANDA_BILDER_MASTER_v4/
+Lodgeys_Boxing_GODKANDA_BILDER_MASTER_v4.zip
